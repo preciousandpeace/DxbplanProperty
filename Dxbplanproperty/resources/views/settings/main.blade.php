@@ -5,7 +5,7 @@
     <title> @yield('title')</title>
 </head>
 <body>
-<h1>Hello</h1>
+@yield('header_navbar')
 @yield('main')
 @yield('footer')
 @yield('script')
