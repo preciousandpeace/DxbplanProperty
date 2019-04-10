@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Dxbplanproperty/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/Dxbplanproperty/tests" isTestSource="true" packagePrefix="Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/beyondcode/laravel-dump-server" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
