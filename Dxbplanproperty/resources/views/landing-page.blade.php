@@ -17,7 +17,7 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="http://placehold.it/1920x1050" alt="banner">
+                    <img class="d-block w-100" src="{{asset('assets/img/home.png')}}" alt="banner">
                     <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                         <div class="carousel-content container">
                             <div class="t-center">
