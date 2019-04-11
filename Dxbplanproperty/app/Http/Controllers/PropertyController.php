@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Layout;
+use App\Property;
 use Illuminate\Http\Request;
 
 class PropertyController extends Controller
@@ -43,7 +45,13 @@ class PropertyController extends Controller
 	 */
 	public function getAllProperties()
 	{
-		return view('properties');
+		$property = Property::paginate(2);
+		$layouts  = Layout::all();
+
+		return view('properties', [
+			'properties' 	=> $property,
+			'layouts' 		=> $layouts,
+		]);
 	}
 
 

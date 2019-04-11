@@ -12,6 +12,6 @@ class Property extends Model
 
 	public function settings() {
 
-		return $this->hasMany(Settings::class);
+		return $this->hasMany('App\Settings');
 	}
 }

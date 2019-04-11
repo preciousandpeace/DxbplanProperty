@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Settings extends Model
 {
 	protected $fillable =  [
-		'name'
+		'name', 'slug'
 	];
 
 	public function property() {
 
-		return $this->belongsTo(Property::class);
+		return $this->belongsTo('App\Property');
 	}
 }

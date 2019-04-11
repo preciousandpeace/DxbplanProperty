@@ -17,6 +17,7 @@ class PropertySeederTable extends Seeder
 			\App\Property::create([
 				'name' 			=> $faker->firstNameFemale,
 				'slug'			=> 'Regina-' . $i,
+				'layout_id'	=> $faker->biasedNumberBetween(1,4)
 			]);
 		}
 
@@ -25,6 +26,8 @@ class PropertySeederTable extends Seeder
 			\App\Property::create([
 				'name' 			=> $faker->firstNameFemale,
 				'slug'			=> 'o2-' . $i,
+				'layout_id'	=> $faker->biasedNumberBetween(1,4)
+
 			]);
 		}
 
@@ -33,6 +36,8 @@ class PropertySeederTable extends Seeder
 			\App\Property::create([
 				'name' 			=> $faker->firstNameFemale,
 				'slug'			=> 'theSquare-' . $i,
+				'layout_id'	=> $faker->biasedNumberBetween(1,4)
+
 			]);
 		}
 
@@ -41,6 +46,7 @@ class PropertySeederTable extends Seeder
 			\App\Property::create([
 				'name' 			=> $faker->firstNameFemale,
 				'slug'			=> 'samaya-' . $i,
+				'layout_id'	=> $faker->biasedNumberBetween(1,4)
 			]);
 		}
     }
