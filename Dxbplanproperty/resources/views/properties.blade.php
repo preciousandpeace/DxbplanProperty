@@ -37,7 +37,7 @@
                             <h5 class="sidebar-title">Categories</h5>
                             <ul>
                                 @foreach($layouts as $layout)
-                                    <li><a href="#">{{$layout->name}}<span>(12)</span></a></li>
+                                    <li><a href="#">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
                                 @endforeach
                             </ul>
                         </div>
