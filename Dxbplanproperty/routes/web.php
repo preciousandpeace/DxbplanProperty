@@ -11,5 +11,11 @@
 |
 */
 
-Route::get('/', 'LandingController@index')->name('landing.index');
+Route::get('/', 'PropertyController@index')->name('property.index');
+
+Route::get('contact', 'PropertyController@contactUs')->name('property.contactUs');
+
+Route::get('about', 'PropertyController@aboutUs')->name('property.aboutUs');
+
+Route::get('properties', 'PropertyController@getAllProperties')->name('property.properties');
 

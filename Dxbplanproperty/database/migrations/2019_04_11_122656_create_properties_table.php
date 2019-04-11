@@ -15,6 +15,10 @@ class CreatePropertiesTable extends Migration
     {
         Schema::create('properties', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->string('image');
+            $table->text('images');
             $table->timestamps();
         });
     }
