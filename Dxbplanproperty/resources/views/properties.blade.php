@@ -16,7 +16,7 @@
     <div class="sub-banner overview-bgi">
         <div class="container">
             <div class="breadcrumb-area">
-                <h1>Properties Grid</h1>
+                <h1>Properties Images</h1>
                 <ul class="breadcrumbs">
                     <li><a href="{{route('property.index')}}">Home</a></li>
                     <li class="active">Properties Grid</li>
