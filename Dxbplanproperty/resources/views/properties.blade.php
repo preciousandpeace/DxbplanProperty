@@ -34,10 +34,10 @@
                     <div class="sidebar mrb">
                         <!-- Categories start -->
                         <div class="widget categories">
-                            <h5 class="sidebar-title">Categories</h5>
+                            <h5 class="sidebar-title">Properties</h5>
                             <ul>
                                 @foreach($layouts as $layout)
-                                    <li><a href="#">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
+                                    <li class="{{request()->property == $layout->name ? 'active nav-link pills ' : ''}}"><a href="{{route('property.properties', ['property' => $layout->name])}}">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -135,7 +135,7 @@
                             <div class="pagination-box text-center">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
-                                        {{$properties->links()}}
+                                        {{$properties->appends(request()->input())->links()}}
                                     </ul>
                                 </nav>
                             </div>
@@ -147,3 +147,19 @@
     </div>
     <!-- Properties list rightside end -->
 @endsection
+
+@section('footer')
+    @include('settings.footer')
+@endsection
+
+
+@section('script')
+    @include('settings.js')
+@endsection
+
+<style>
+    .active {
+        color: red;
+        font-size: 30px;
+    }
+</style>
