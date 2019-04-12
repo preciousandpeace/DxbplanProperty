@@ -10,8 +10,8 @@ class Property extends Model
 		'name', 'slug', 'image', 'images'
 	];
 
-	public function settings() {
+	public function layouts() {
 
-		return $this->hasMany('App\Settings');
+		return $this->hasMany('App\Layout');
 	}
 }
