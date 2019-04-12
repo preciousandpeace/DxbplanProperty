@@ -102,7 +102,7 @@
                                     </h1>
                                     <div class="location">
                                         <a href="properties-details.html">
-                                            <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
+                                            <i class="fa fa-money"></i>Sarting from from <h1>${{$property->price}}</h1>
                                         </a>
                                     </div>
                                     <ul class="facilities-list clearfix">
