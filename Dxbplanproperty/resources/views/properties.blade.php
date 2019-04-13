@@ -102,7 +102,7 @@
                                     </h1>
                                     <div class="location">
                                         <a href="properties-details.html">
-                                            <i class="fa fa-money"></i>Sarting from from <h1>${{$property->price}}</h1>
+                                            <i class="fa fa-money"></i>Sarting from from <h1>{{$property->convertPrice()}}</h1>
                                         </a>
                                     </div>
                                     <ul class="facilities-list clearfix">

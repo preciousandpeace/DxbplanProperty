@@ -79,6 +79,7 @@
       <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/beyondcode/laravel-dump-server" />
       <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/akaunting/money" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d832724e-ca20-4f32-baf8-1836a3ad3ec8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DxbplanProperty.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DxbplanProperty.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dxbplanproperty/app/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dxbplanproperty/app/Property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dxbplanproperty/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Dxbplanproperty/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dxbplanproperty/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Dxbplanproperty/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dxbplanproperty/resources/views/properties.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dxbplanproperty/resources/views/properties.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,85 +21,54 @@
     <pharConfigPath>$PROJECT_DIR$/Dxbplanproperty/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="landing-page.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Property.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/app/Property.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+            <state relative-caret-position="267">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="32" />
               <folding>
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#49858#49917#0#HTML" expanded="true" />
-                <element signature="e#49797#53232#0#HTML" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
-                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#23#62#0#PHP" expanded="true" />
+                <element signature="e#163#233#0#PHP" expanded="true" />
+                <element signature="e#237#307#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js">
+      <file leaf-file-name="money.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/config/money.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="710" column="43" lean-forward="true" selection-start-line="710" selection-start-column="43" selection-end-line="710" selection-end-column="43" />
+            <state relative-caret-position="210">
+              <caret line="1615" column="36" selection-start-line="1615" selection-start-column="36" selection-end-line="1615" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/img/home.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html">
+      <file leaf-file-name="properties.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/properties.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="1035" selection-start-line="1035" selection-end-line="1261" selection-end-column="26" />
+            <state relative-caret-position="279">
+              <caret line="104" column="93" lean-forward="true" selection-start-line="104" selection-start-column="93" selection-end-line="104" selection-end-column="93" />
               <folding>
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header-navbar.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/header-navbar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-              <folding>
-                <element signature="n#header#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/main.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding>
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
+                <element signature="e#0#5#0" expanded="true" />
                 <element signature="e#0#5#0" expanded="true" />
                 <element signature="e#0#5#0" expanded="true" />
                 <element signature="e#0#5#0" expanded="true" />
@@ -105,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="head.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/head.blade.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dxbplanproperty/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="7" selection-end-column="24" />
+            <state relative-caret-position="195">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -118,7 +92,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>color-plate default-plate</find>
+      <find />
+      <find>Nai</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -139,6 +114,9 @@
         <option value="$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/main.blade.php" />
         <option value="$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js" />
         <option value="$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php" />
+        <option value="$PROJECT_DIR$/Dxbplanproperty/app/Property.php" />
+        <option value="$PROJECT_DIR$/Dxbplanproperty/resources/views/properties.blade.php" />
+        <option value="$PROJECT_DIR$/Dxbplanproperty/config/money.php" />
       </list>
     </option>
   </component>
@@ -227,6 +205,7 @@
       <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/opis/closure" />
       <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/beyondcode/laravel-dump-server" />
       <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/Dxbplanproperty/vendor/akaunting/money" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -257,28 +236,7 @@
               <item name="DxbplanProperty" type="b2602c69:ProjectViewProjectNode" />
               <item name="DxbplanProperty" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Dxbplanproperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DxbplanProperty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DxbplanProperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dxbplanproperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DxbplanProperty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DxbplanProperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dxbplanproperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="DxbplanProperty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DxbplanProperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Dxbplanproperty" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="DxbplanProperty" type="b2602c69:ProjectViewProjectNode" />
@@ -336,31 +294,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5185000" />
+    <option name="totallyTimeSpent" value="6428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="121" y="-708" width="1396" height="811" extended-state="0" />
+    <frame x="0" y="23" width="1396" height="811" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533235" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32913166" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963072" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32913166" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963072" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32913166" />
+      <window_info id="Favorites" order="4" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,40 +340,32 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/maps.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/leaflet.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/dropzone.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/slick.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/typed.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/popper.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/backstretch.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/rangeslider.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#407#450#1#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/header-navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html" />
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="710" column="43" lean-forward="true" selection-start-line="710" selection-start-column="43" selection-end-line="710" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -439,13 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#0#5#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -453,32 +408,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
-          <folding>
-            <element signature="n#header#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="1035" selection-start-line="1035" selection-end-line="1261" selection-end-column="26" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#7;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#8;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#9;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#10;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html" />
     <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -486,13 +419,248 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/img/home.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="1046" selection-start-line="1046" selection-end-line="1053" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/app/Http/Controllers/PropertyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/js.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/search-modal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/header-navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html" />
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="710" column="43" lean-forward="true" selection-start-line="710" selection-start-column="43" selection-end-line="710" selection-end-column="43" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/app/Layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#178#253#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/js.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/search-modal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/header-navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html" />
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="710" column="43" lean-forward="true" selection-start-line="710" selection-start-column="43" selection-end-line="710" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/js.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/search-modal.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/settings/header-navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="60" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/index.html" />
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/public/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="710" column="43" lean-forward="true" selection-start-line="710" selection-start-column="43" selection-end-line="710" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/landing-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="19" column="61" lean-forward="true" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/app/Property.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#62#0#PHP" expanded="true" />
+            <element signature="e#163#233#0#PHP" expanded="true" />
+            <element signature="e#237#307#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/resources/views/properties.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="104" column="93" lean-forward="true" selection-start-line="104" selection-start-column="93" selection-end-line="104" selection-end-column="93" />
           <folding>
             <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
@@ -501,13 +669,30 @@
             <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
-            <element signature="e#49858#49917#0#HTML" expanded="true" />
-            <element signature="e#49797#53232#0#HTML" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
+            <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
             <element signature="e#0#5#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dxbplanproperty/config/money.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="1615" column="36" selection-start-line="1615" selection-start-column="36" selection-end-line="1615" selection-end-column="36" />
         </state>
       </provider>
     </entry>
