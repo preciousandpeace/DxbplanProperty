@@ -146,6 +146,9 @@
         </div>
     </div>
     <!-- Properties list rightside end -->
+
+    {{--Consent forms goes here--}}
+    @include('cookieConsent::index')
 @endsection
 
 @section('footer')

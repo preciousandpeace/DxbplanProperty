@@ -1042,6 +1042,8 @@
         </div>
     </div>
     <!-- intro section end -->
+    {{--Consent forms goes here--}}
+    @include('cookieConsent::index')
 @endsection
 
 @section('footer')
