@@ -159,10 +159,3 @@
 @section('script')
     @include('settings.js')
 @endsection
-
-<style>
-    .active {
-        color: red;
-        font-size: 30px;
-    }
-</style>
