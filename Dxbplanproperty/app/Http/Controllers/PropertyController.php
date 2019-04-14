@@ -45,7 +45,15 @@ class PropertyController extends Controller
 	 */
 	public function getAllProperties()
 	{
-		$property = Property::paginate(2);
+
+		$name = Layout::where('name', '=', request()->property)->first();
+		if (request()->property) {
+			$property = Property::where('layout_id', $name->id)->paginate(2);
+		} else {
+
+			$property = Property::paginate(2);
+		}
+
 		$layouts  = Layout::all();
 
 		return view('properties', [
@@ -53,6 +61,4 @@ class PropertyController extends Controller
 			'layouts' 		=> $layouts,
 		]);
 	}
-
-
 }

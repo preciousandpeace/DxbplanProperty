@@ -17,6 +17,8 @@ class CreatePropertiesTable extends Migration
             $table->bigIncrements('id');
 			$table->string('name');
 			$table->string('slug')->unique();
+			$table->integer('price');
+			$table->text('description');
 			$table->string('image')->nullable()->default('04');
 			$table->text('images')->nullable();
 			$table->integer('layout_id')->unsigned()->index();

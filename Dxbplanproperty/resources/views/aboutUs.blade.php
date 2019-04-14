@@ -76,4 +76,7 @@
     </div>
     <!-- banner end -->
     <h1>Add the content here</h1>
+
+    {{--Consent forms goes here--}}
+    @include('cookieConsent::index')
 @endsection

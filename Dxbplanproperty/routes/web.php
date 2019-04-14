@@ -19,3 +19,5 @@ Route::get('about', 'PropertyController@aboutUs')->name('property.aboutUs');
 
 Route::get('properties', 'PropertyController@getAllProperties')->name('property.properties');
 
+//Route::post('properties/{property}', 'PropertyController@getAllProperties')->name('property.properties');
+

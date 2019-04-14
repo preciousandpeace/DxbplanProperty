@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Dxbplanproperty/app" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/Dxbplanproperty/tests" isTestSource="true" packagePrefix="Tests\" />
+      <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/akaunting/money" />
       <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/beyondcode/laravel-dump-server" />
       <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/Dxbplanproperty/vendor/dnoegel/php-xdg-base-dir" />

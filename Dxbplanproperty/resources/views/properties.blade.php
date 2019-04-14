@@ -34,10 +34,10 @@
                     <div class="sidebar mrb">
                         <!-- Categories start -->
                         <div class="widget categories">
-                            <h5 class="sidebar-title">Categories</h5>
+                            <h5 class="sidebar-title">Properties</h5>
                             <ul>
                                 @foreach($layouts as $layout)
-                                    <li><a href="#">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
+                                    <li class="{{request()->property == $layout->name ? 'active nav-link pills ' : ''}}"><a href="{{route('property.properties', ['property' => $layout->name])}}">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -102,7 +102,7 @@
                                     </h1>
                                     <div class="location">
                                         <a href="properties-details.html">
-                                            <i class="fa fa-map-marker"></i>123 Kathal St. Tampa City,
+                                            <i class="fa fa-money"></i>Sarting from from <h1>{{$property->convertPrice()}}</h1>
                                         </a>
                                     </div>
                                     <ul class="facilities-list clearfix">
@@ -135,7 +135,7 @@
                             <div class="pagination-box text-center">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
-                                        {{$properties->links()}}
+                                        {{$properties->appends(request()->input())->links()}}
                                     </ul>
                                 </nav>
                             </div>
@@ -146,4 +146,16 @@
         </div>
     </div>
     <!-- Properties list rightside end -->
+
+    {{--Consent forms goes here--}}
+    @include('cookieConsent::index')
+@endsection
+
+@section('footer')
+    @include('settings.footer')
+@endsection
+
+
+@section('script')
+    @include('settings.js')
 @endsection
