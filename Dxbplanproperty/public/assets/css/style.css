@@ -1320,7 +1320,7 @@ a {
 }
 /** SUB BANNER **/
 .sub-banner {
-    background: rgba(0, 0, 0, 0.04) url(../img/home.png) top left repeat;
+    background: rgba(0, 0, 0, 0.04) url(../img/home.jpg) top left repeat;
     background-size: cover;
     height: 355px;
     background-position: center center;

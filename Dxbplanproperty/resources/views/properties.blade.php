@@ -1,161 +1,99 @@
 @extends('settings.main')
 
 @section('head')
-    @include('settings.head')
+@include('settings.head')
 @endsection
 
 @section('title', 'All properties')
 
 @section('header_navbar')
-    @include('settings.header-navbar')
+@include('settings.header-navbar')
 @endsection
 
 
 @section('main')
-    <!-- Sub banner start -->
-    <div class="sub-banner overview-bgi">
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Our Properties</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{{route('property.index')}}">Home</a></li>
+                <li class="active">Properties</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub banner end -->
+<br>
+<!-- Most popular places start -->
+<div class="most-popular-places content-area-3">
+    <div class="container">
+        <div class="main-title">
+            <h1>Our Properties</h1>
+            <p>Click to learn more about the fantastic properties we have to offer.</p>
+        </div>
         <div class="container">
-            <div class="breadcrumb-area">
-                <h1>Properties Images</h1>
-                <ul class="breadcrumbs">
-                    <li><a href="{{route('property.index')}}">Home</a></li>
-                    <li class="active">Properties Grid</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Sub banner end -->
-
-    <!-- Properties list rightside start -->
-    <div class="properties-list-rightside content-area-2">
-        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 col-md-12">
-                    <div class="sidebar mrb">
-                        <!-- Categories start -->
-                        <div class="widget categories">
-                            <h5 class="sidebar-title">Properties</h5>
-                            <ul>
-                                @foreach($layouts as $layout)
-                                    <li class="{{request()->property == $layout->name ? 'active nav-link pills ' : ''}}"><a href="{{route('property.properties', ['property' => $layout->name])}}">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
-                                @endforeach
-                            </ul>
-                        </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place1.jpg')}}" alt="place1" class="big-img">
+                        <div class="mask">
+                            <h2>O2 Tower</h2>
 
+                            <a href="{{route('property.02Tower')}}" class="btn btn-border">Learn more</a>
+                        </div>
                     </div>
+                    <h3>O2 Tower</h3>
                 </div>
-                <div class="col-lg-9 col-md-12">
-                    <div class="option-bar d-none d-xl-block d-lg-block d-md-block d-sm-block">
-                        <div class="row clearfix">
-                            <div class="col-xl-4.5 col-lg-5 col-md-5 col-sm-5">
-                                <h4>
-                                <span class="heading-icon">
-                                    <i class="fa fa-caret-right icon-design"></i>
-                                    <i class="fa fa-th-large"></i>
-                                </span>
-                                    <span class="heading">Properties Grid</span>
-                                </h4>
-                            </div>
-                            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-7">
-                                <div class="search-area">
-                                    <select class="selectpicker search-fields" name="location">
-                                        <option>High to Low</option>
-                                        <option>Low to High</option>
-                                    </select>
-                                </div>
-                            </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInUp delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place2.jpg')}}" alt="place2" class="big-img">
+                        <div class="mask">
+                            <h2>Regina Tower</h2>
+
+                            <a href="{{route('property.reginaTower')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
-                    <div class="subtitle">
-                        <strong>{{\App\Property::count()}}</strong> Result Found
-                    </div>
-                    <div class="row">
-                        @foreach($properties as $property)
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="property-box">
-                                <div class="property-thumbnail">
-                                    <a href="properties-details.html" class="property-img">
-                                        <div class="tag button alt featured">Featured</div>
-                                        <div class="price-ratings-box">
-                                            <p class="price">
-                                                $178,000
-                                            </p>
-                                            <div class="ratings">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
-                                        </div>
-                                        <a href="google.com"><img src="{{asset('/assets/img/'.$property->image.'.jpg')}}" alt="property-7" class="img-fluid"></a>
-                                    </a>
-                                    <div class="property-overlay">
-                                        <a href="properties-details.html" class="overlay-link">
-                                            <i class="fa fa-info"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="detail">
-                                    <h1 class="title">
-                                        <a href="properties-details.html">{{$property->name}}</a>
-                                    </h1>
-                                    <div class="location">
-                                        <a href="properties-details.html">
-                                            <i class="fa fa-money"></i>Sarting from from <h1>{{$property->convertPrice()}}</h1>
-                                        </a>
-                                    </div>
-                                    <ul class="facilities-list clearfix">
-                                        <li>
-                                            <i class="flaticon-bed"></i> 3 Bedrooms
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-bath"></i> 2 Bathrooms
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-square-layouting-with-black-square-in-east-area"></i> Sq Ft:3400
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-car-repair"></i> 1 Garage
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="footer">
-                                    <a href="#">
-                                        <i class="fa fa-user"></i> Jhon Doe
-                                    </a>
-                                    <span>
-                                     <i class="fa fa-calendar-o"></i> 2 years ago
-                                </span>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
-                        <div class="col-lg-12 pt-5">
-                            <div class="pagination-box text-center">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                        {{$properties->appends(request()->input())->links()}}
-                                    </ul>
-                                </nav>
-                            </div>
+                    <h3>Regina Tower</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInDown delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place3.jpg')}}" alt="place3" class="big-img">
+                        <div class="mask">
+                            <h2>Samaya 2 <br>Hotel Apartment</h2>
+
+                            <a href="{{route('property.samaya2HotelApartment')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
+                    <h3>Samaya 2 Hotel Apartment</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInRight delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place4.jpg')}}" alt="place4" class="big-img">
+                        <div class="mask">
+                            <h2>The Square</h2>
+
+                            <a href="{{route('property.theSquare')}}" class="btn btn-border">Learn more</a>
+                        </div>
+                    </div>
+                    <h3>The Square</h3>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Properties list rightside end -->
+</div>
+<!-- Most popular places end -->
 
-    {{--Consent forms goes here--}}
-    @include('cookieConsent::index')
+{{--Consent forms goes here--}}
+@include('cookieConsent::index')
 @endsection
 
 @section('footer')
-    @include('settings.footer')
+@include('settings.footer')
 @endsection
 
 
 @section('script')
-    @include('settings.js')
+@include('settings.js')
 @endsection

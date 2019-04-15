@@ -17,46 +17,46 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="{{asset('assets/img/home.png')}}" alt="banner">
+                    <img class="d-block w-100 img-fluid" src="{{asset('assets/img/home3.jpg')}}" alt="banner">
                     <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                         <div class="carousel-content container">
                             <div class="t-center">
-                                <h1 data-animation="animated fadeInDown delay-05s">We love make things <br/>amazing and simple</h1>
+                                <h1 data-animation="animated fadeInDown delay-05s">DxbPlanProperty Makes<br/>Buying Amazing And Simple</h1>
                                 <p data-animation="animated fadeInUp delay-10s">
-                                    This is real estate website template based on Bootstrap 4 framework.
+                                    DxbPlanProperty, number 1 for buying real estate in Dubai.
                                 </p>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-theme">Get Started Now</a>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-white-lg-outline">Free Download</a>
+                                <a data-animation="animated fadeInUp delay-10s" href="{{route('property.properties')}}" class="btn btn-lg btn-round btn-theme">View Our Properties</a>
+                                <a data-animation="animated fadeInUp delay-10s" href="{{route('property.contactUs')}}" class="btn btn-lg btn-round btn-white-lg-outline">Contact us</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="http://placehold.it/1920x1050" alt="banner">
+                    <img class="d-block w-100" src="{{asset('assets/img/home4.jpg')}}" alt="banner">
                     <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                         <div class="carousel-content container">
                             <div class="t-right">
-                                <h1 data-animation="animated fadeInDown delay-05s">Find Your <br/> Dream Properties</h1>
+                                <h1 data-animation="animated fadeInDown delay-05s">Find Your Dream Properties<br/> with DxbPlanProperty </h1>
                                 <p data-animation="animated fadeInUp delay-10s">
-                                    This is real estate website template based on Bootstrap 4 framework.
+                                    DxbPlanProperty, number 1 for buying real estate in Dubai.
                                 </p>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-theme">Get Started Now</a>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-white-lg-outline">Free Download</a>
+                                <a data-animation="animated fadeInUp delay-10s" href="{{route('property.properties')}}" class="btn btn-lg btn-round btn-theme">View Our Properties</a>
+                                <a data-animation="animated fadeInUp delay-10s" href="{{route('property.contactUs')}}" class="btn btn-lg btn-round btn-white-lg-outline">Contact us</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="http://placehold.it/1920x1050" alt="banner">
+                    <img class="d-block w-100" src="{{asset('assets/img/home5.jpg')}}" alt="banner">
                     <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
                         <div class="carousel-content container">
                             <div class="t-left">
-                                <h1 data-animation="animated fadeInUp delay-05s">Best Place For <br/> Sell Properties</h1>
+                                <h1 data-animation="animated fadeInUp delay-05s">Best Place For <br/> Buying Properties in Dubai</h1>
                                 <p data-animation="animated fadeInUp delay-10s">
-                                    This is real estate website template based on Bootstrap 4 framework.
+                                    DxbPlanProperty, number 1 for buying real estate in Dubai.
                                 </p>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-theme">Get Started Now</a>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-white-lg-outline">Free Download</a>
+                                <a data-animation="animated fadeInUp delay-10s" href="{{route('property.properties')}}" class="btn btn-lg btn-round btn-theme">View Our Properties</a>
+                                <a data-animation="animated fadeInUp delay-10s" href="{{route('property.contactUs')}}" class="btn btn-lg btn-round btn-white-lg-outline">Contact us</a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
     <!-- banner end -->
 
     <!-- Search area start -->
-    <div class="search-area" id="search-area-1">
+   <!-- <div class="search-area" id="search-area-1">
         <div class="container">
             <div class="search-area-inner">
                 <div class="search-contents ">
@@ -174,11 +174,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- Search area end -->
 
     <!-- Featured properties start -->
-    <div class="featured-properties content-area-7">
+    <!--<div class="featured-properties content-area-7">
         <div class="container-fluid">
             <div class="main-title">
                 <h1>Featured Properties</h1>
@@ -607,7 +607,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- Featured properties end -->
 
     <!-- services start -->
@@ -615,28 +615,28 @@
         <div class="container">
             <div class="main-title">
                 <h1>What Are you Looking For?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>DxbPlanProperty can offer you luxury properties in the heart of Dubai at an affordable price.</p>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 services-info-3 s-brd-2 wow fadeInLeft delay-04s">
                     <i class="flaticon-hotel-building"></i>
-                    <h5>Apartments Clean</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    <h5>Apartments for Rent</h5>
+                    <p>We rent out quality apartment blocks at an affordable price.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 services-info-3 s-brd-1 wow fadeInUp delay-04s">
                     <i class="flaticon-house"></i>
-                    <h5>Houses</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    <h5>Properties For Sale</h5>
+                    <p>We offer affordable properties and real estate to any customers looking for a property in Dubai.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 services-info-3 s-brd-3 wow fadeInDown delay-04s">
                     <i class="flaticon-call-center-agent"></i>
                     <h5>Support 24/7</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    <p>We are happy to take your call anytime of the day.</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 services-info-3 wow fadeInRight delay-04s">
                     <i class="flaticon-office-block"></i>
                     <h5>Commercial</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    <p>We offer office space with beautiful views to make work life less stressful</p>
                 </div>
             </div>
         </div>
@@ -648,7 +648,7 @@
         <div class="container">
             <div class="main-title">
                 <h1>Recent Properties</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Recently added properties in the heart of Dubai.</p>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
@@ -668,6 +668,7 @@
                                     </a>
                                 </div>
                             </div>
+
                             <div class="properties-listing">
                                 <span>3 Beds</span>
                                 <span>2 Baths</span>
@@ -757,66 +758,66 @@
     <!-- Recent Properties end -->
 
     <!-- Most popular places start -->
-    <div class="most-popular-places content-area-3">
+<div class="most-popular-places content-area-3">
+    <div class="container">
+        <div class="main-title">
+            <h1>Our Properties</h1>
+            <p>Click to learn more about the fantastic properties we have to offer.</p>
+        </div>
         <div class="container">
-            <div class="main-title">
-                <h1>Most Popular Places</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12">
-                        <div class="row">
-                            <div class="col-md-12 col-pad wow fadeInLeft delay-04s">
-                                <div class="overview overview-box">
-                                    <img src="http://placehold.it/632x232" alt="popular-places">
-                                    <div class="mask">
-                                        <h2>New York</h2>
-                                        <p>14 Properties</p>
-                                        <a href="properties-details.html" class="btn btn-border">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-pad wow fadeInUp delay-04s">
-                                <div class="overview overview-box">
-                                    <img src="http://placehold.it/307x232" alt="popular-places-2">
-                                    <div class="mask">
-                                        <h2>Canada</h2>
-                                        <p>25 Properties</p>
-                                        <a href="properties-details.html" class="btn btn-border">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-pad wow fadeInUp delay-04s">
-                                <div class="overview overview-box">
-                                    <img src="http://placehold.it/307x232" alt="popular-places-4">
-                                    <div class="mask">
-                                        <h2>California</h2>
-                                        <p>12 Properties</p>
-                                        <a href="properties-details.html" class="btn btn-border">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place1.jpg')}}" alt="place1" class="big-img">
+                        <div class="mask">
+                            <h2>O2 Tower</h2>
+
+                            <a href="{{route('property.02Tower')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-12 col-pad wow fadeInRight delay-04s">
-                        <div class="overview aa overview-box">
-                            <img src="http://placehold.it/447x480" alt="popular-places-3" class="big-img">
-                            <div class="mask">
-                                <h2>Florida</h2>
-                                <p>45 Properties</p>
-                                <a href="properties-details.html" class="btn btn-border">Read more</a>
-                            </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInUp delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place2.jpg')}}" alt="place2" class="big-img">
+                        <div class="mask">
+                            <h2>Regina Tower</h2>
+
+                            <a href="{{route('property.reginaTower')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInDown delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place3.jpg')}}" alt="place3" class="big-img">
+                        <div class="mask">
+                            <h2>Samaya 2 <br>Hotel Apartment</h2>
+
+                            <a href="{{route('property.samaya2HotelApartment')}}" class="btn btn-border">Learn more</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInRight delay-04s">
+                    <div class="overview aa overview-box">
+                        <img src="{{asset('assets/img/place4.jpg')}}" alt="place4" class="big-img">
+                        <div class="mask">
+                            <h2>The Square</h2>
+
+                            <a href="{{route('property.theSquare')}}" class="btn btn-border">Learn more</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- Most popular places end -->
 
     <!-- Agent start -->
-    <div class="agent content-area">
+   <!-- <div class="agent content-area">
         <div class="container">
             <div class="main-title">
                 <h1>Meet Our Agents</h1>
@@ -901,11 +902,11 @@
                 </div>
             </div>
         </div>
-    </div >
+    </div >-->
     <!-- Agent end -->
 
     <!-- Testimonial start -->
-    <div class="testimonial overview-bgi wow fadeInUp delay-04s" style="background-image: url(http://placehold.it/1920x541)">
+   <!-- <div class="testimonial overview-bgi wow fadeInUp delay-04s" style="background-image: url(http://placehold.it/1920x541)">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -959,11 +960,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- Testimonial end -->
 
     <!-- Blog start -->
-    <div class="blog content-area-2">
+   <!-- <div class="blog content-area-2">
         <div class="container">
             <div class="main-title">
                 <h1>Latest Blog</h1>
@@ -1020,23 +1021,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- Blog start -->
 
     <!-- intro section start -->
     <div class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-12">
+                <div class="col-lg-3 col-md-3 col-sm-12">
                     <img src="assets/img/logos/logo-white.png" alt="loo">
                 </div>
-                <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="intro-text">
-                        <h3>Looking To Sell Or Rent Your Property?</h3>
+                        <h3>Looking To Buy a Property in Dubai?</h3>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
-                    <a href="#" class="btn btn-md sn">Submit Now</a>
+                    <a href="{{route('property.contactUs')}}" class="btn btn-md sn">Contact Us</a>
                 </div>
             </div>
         </div>

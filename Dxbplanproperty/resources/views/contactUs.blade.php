@@ -12,71 +12,119 @@
 
 
 @section('main')
-    <!-- Banner start -->
-    <div class="banner" id="banner">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="{{asset('assets/img/home.png')}}" alt="banner">
-                    <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
-                        <div class="carousel-content container">
-                            <div class="t-center">
-                                <h1 data-animation="animated fadeInDown delay-05s">We love make things <br/>amazing and simple</h1>
-                                <p data-animation="animated fadeInUp delay-10s">
-                                    This is real estate website template based on Bootstrap 4 framework.
-                                </p>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-theme">Get Started Now</a>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-white-lg-outline">Free Download</a>
+
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container">
+        <div class="breadcrumb-area">
+            <h1>Contact Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{{route('property.index')}}">Home</a></li>
+                <li class="active">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub banner end -->
+
+<!-- Contact 1 start -->
+<div class="contact-1 content-area-7">
+    <div class="container">
+        <div class="main-title">
+            <h1>Contact Us</h1>
+            <p>We look forward to hearing from you.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-md-7">
+                <form action="#" method="GET" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group email">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group subject">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group number">
+                                <input type="text" name="phone" class="form-control" placeholder="Number">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group message">
+                                <textarea class="form-control" name="message" placeholder="Write message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="send-btn">
+                                <button type="submit" class="btn btn-color btn-md btn-message">Send Message</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="http://placehold.it/1920x1050" alt="banner">
-                    <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
-                        <div class="carousel-content container">
-                            <div class="t-right">
-                                <h1 data-animation="animated fadeInDown delay-05s">Find Your <br/> Dream Properties</h1>
-                                <p data-animation="animated fadeInUp delay-10s">
-                                    This is real estate website template based on Bootstrap 4 framework.
-                                </p>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-theme">Get Started Now</a>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-white-lg-outline">Free Download</a>
-                            </div>
+                </form>
+            </div>
+
+            <div class=" offset-lg-1 col-lg-4 offset-md-0 col-md-5">
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <div class="media">
+                        <i class="fa fa-map-marker"></i>
+                        <div class="media-body">
+                            <h5 class="mt-0">Office Address</h5>
+                            <p>20/F Green Road, Dhanmondi, Dhaka</p>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="http://placehold.it/1920x1050" alt="banner">
-                    <div class="carousel-caption banner-slider-inner d-flex h-100 text-center">
-                        <div class="carousel-content container">
-                            <div class="t-left">
-                                <h1 data-animation="animated fadeInUp delay-05s">Best Place For <br/> Sell Properties</h1>
-                                <p data-animation="animated fadeInUp delay-10s">
-                                    This is real estate website template based on Bootstrap 4 framework.
-                                </p>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-theme">Get Started Now</a>
-                                <a data-animation="animated fadeInUp delay-10s" href="#" class="btn btn-lg btn-round btn-white-lg-outline">Free Download</a>
-                            </div>
+                    <div class="media">
+                        <i class="fa fa-phone"></i>
+                        <div class="media-body">
+                            <h5 class="mt-0">Phone Number</h5>
+                            <p>Office<a href="tel:+971555396242">: +971555396242</a> </p>
+                            <p>Mobile<a href="tel:+971555396242">: +971555396242</a> </p>
+                        </div>
+                    </div>
+                    <div class="media mrg-btn-0">
+                        <i class="fa fa-envelope"></i>
+                        <div class="media-body">
+                            <h5 class="mt-0">Email Address</h5>
+                            <p><a href="#">info@themevessel.com</a></p>
+                            <p><a href="#">http://themevessel.com</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="slider-mover-left" aria-hidden="true">
-                <i class="fa fa-angle-left"></i>
-            </span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="slider-mover-right" aria-hidden="true">
-                <i class="fa fa-angle-right"></i>
-            </span>
-            </a>
         </div>
     </div>
-    <!-- banner end -->
-    <h1>Add the content here</h1>
+</div>
+<!-- Contact 1 end -->
 
-    {{--Consent forms goes here--}}
-    @include('cookieConsent::index')
+<!-- Google map start -->
+<div class="section">
+    <div class="map">
+        <div id="contactMap" class="contact-map"></div>
+    </div>
+</div>
+<!-- Google map end -->
+
+
+{{--Consent forms goes here--}}
+@include('cookieConsent::index')
+@endsection
+
+@section('footer')
+@include('settings.footer')
+@endsection
+
+
+@section('script')
+@include('settings.js')
 @endsection
