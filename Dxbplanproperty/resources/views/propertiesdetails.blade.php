@@ -38,7 +38,9 @@
                             <h5 class="sidebar-title">Properties</h5>
                             <ul>
                                 @foreach($layouts as $layout)
-                                    <li class="{{request()->property == $layout->name ? 'active nav-link pills ' : ''}}"><a href="{{route('property.properties', ['property' => $layout->name])}}">{{$layout->name}}<span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
+                                <li class="{{request()->property == $layout->name ? 'active nav-link pills ' : ''}}">
+                                    <a href="{{route('property.properties', ['property' => $layout->name])}}">{{$layout->name}}
+                                        <span>{{\App\Property::where('layout_id' ,'=', $layout->id )->count()}}</span></a></li>
                                 @endforeach
                             </ul>
                         </div>

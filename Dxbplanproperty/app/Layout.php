@@ -6,14 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Layout extends Model
 {
-	protected $tableName = 'layouts';
+    protected $tableName = 'layouts';
 
-	protected $fillable =  [
-		'name', 'slug'
-	];
+    protected $fillable = [
+        'name', 'slug'
+    ];
 
-	public function property() {
+    public function property()
+    {
 
-		return $this->belongsTo('App\Property');
-	}
+        return $this->belongsTo('App\Property');
+    }
 }

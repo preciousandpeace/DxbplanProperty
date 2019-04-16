@@ -41,7 +41,7 @@
                         <div class="mask">
                             <h2>O2 Tower</h2>
 
-                            <a href="{{route('property.02Tower')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
                     <h3>O2 Tower</h3>
@@ -52,7 +52,7 @@
                         <div class="mask">
                             <h2>Regina Tower</h2>
 
-                            <a href="{{route('property.reginaTower')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
                     <h3>Regina Tower</h3>
@@ -63,7 +63,7 @@
                         <div class="mask">
                             <h2>Samaya 2 <br>Hotel Apartment</h2>
 
-                            <a href="{{route('property.samaya2HotelApartment')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
                     <h3>Samaya 2 Hotel Apartment</h3>
@@ -74,7 +74,7 @@
                         <div class="mask">
                             <h2>The Square</h2>
 
-                            <a href="{{route('property.theSquare')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
                     <h3>The Square</h3>

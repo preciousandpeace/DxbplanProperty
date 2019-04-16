@@ -772,7 +772,7 @@
                         <div class="mask">
                             <h2>O2 Tower</h2>
 
-                            <a href="{{route('property.02Tower')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
 
@@ -783,7 +783,7 @@
                         <div class="mask">
                             <h2>Regina Tower</h2>
 
-                            <a href="{{route('property.reginaTower')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
 
@@ -794,7 +794,7 @@
                         <div class="mask">
                             <h2>Samaya 2 <br>Hotel Apartment</h2>
 
-                            <a href="{{route('property.samaya2HotelApartment')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
 
@@ -805,7 +805,7 @@
                         <div class="mask">
                             <h2>The Square</h2>
 
-                            <a href="{{route('property.theSquare')}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.propertiesdetails')}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
 

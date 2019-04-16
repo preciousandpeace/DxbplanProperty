@@ -54,91 +54,20 @@ class PropertyController extends Controller
 
         $name = Layout::where('name', '=', request()->property)->first();
         if (request()->property) {
-            $property = Property::where('layout_id', $name->id)->paginate(2);
+            $property = Property::where('layout_id', $name->id)->paginate(6);
         } else {
 
-            $property = Property::paginate(2);
+            $property = Property::paginate(6);
         }
 
         $layouts  = Layout::all();
 
-        return view('properties', [
+        return view('propertiesdetails', [
             'properties' 	=> $property,
             'layouts' 		=> $layouts,
         ]);
     }
 
-    public function getAll02TowerProperties()
-    {
 
-        $name = Layout::where('name', '=', request()->property)->first();
-        if (request()->property) {
-            $property = Property::where('layout_id', $name->id)->paginate(2);
-        } else {
-
-            $property = Property::paginate(2);
-        }
-
-        $layouts  = Layout::all();
-
-        return view('02Tower', [
-            'properties' 	=> $property,
-            'layouts' 		=> $layouts,
-        ]);
-    }
-    public function getAllreginaTowerProperties()
-    {
-
-        $name = Layout::where('name', '=', request()->property)->first();
-        if (request()->property) {
-            $property = Property::where('layout_id', $name->id)->paginate(2);
-        } else {
-
-            $property = Property::paginate(2);
-        }
-
-        $layouts  = Layout::all();
-
-        return view('reginaTower', [
-            'properties' 	=> $property,
-            'layouts' 		=> $layouts,
-        ]);
-    }
-    public function getAllsamaya2HotelApartmentProperties()
-    {
-
-        $name = Layout::where('name', '=', request()->property)->first();
-        if (request()->property) {
-            $property = Property::where('layout_id', $name->id)->paginate(2);
-        } else {
-
-            $property = Property::paginate(2);
-        }
-
-        $layouts  = Layout::all();
-
-        return view('samaya2HotelApartment', [
-            'properties' 	=> $property,
-            'layouts' 		=> $layouts,
-        ]);
-    }
-    public function getAlltheSquareProperties()
-    {
-
-        $name = Layout::where('name', '=', request()->property)->first();
-        if (request()->property) {
-            $property = Property::where('layout_id', $name->id)->paginate(2);
-        } else {
-
-            $property = Property::paginate(2);
-        }
-
-        $layouts  = Layout::all();
-
-        return view('theSquare', [
-            'properties' 	=> $property,
-            'layouts' 		=> $layouts,
-        ]);
-    }
 
 }
