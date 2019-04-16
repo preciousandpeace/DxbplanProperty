@@ -13,17 +13,25 @@ class LayoutTableSeeder extends Seeder
     {
 
 		\App\Layout::create([
-			'name' 			=> 'Regina',
-//			'slug' 			=> 'Regina',
+			'name' 				=> 'The Regina',
+			'slug' 				=> 'The_Regina',
+			'image' 			=> 'place1',
+			'price' 			=> 109000,
 		]);\App\Layout::create([
-			'name' 			=> '02',
-//			'slug'			=> '02'
+			'name' 				=> 'The 02',
+			'slug'				=> 'The_02',
+			'image'				=> 'place2',
+			'price'				=> 109000
 		]);\App\Layout::create([
-			'name' 			=> 'theSquare',
-//			'slug' 			=> 'theSquare',
+			'name' 				=> 'The Square',
+			'slug' 				=> 'The_Square',
+			'image' 			=> 'place3',
+			'price' 			=> 109000,
 		]);\App\Layout::create([
-			'name' 			=> 'samaya',
-//			'slug' 			=> 'samaya',
+			'name' 				=> 'The samaya',
+			'slug' 				=> 'The_Samaya',
+			'image' 			=> 'place4',
+			'price' 			=> 109000,
 		]);
     }
 }

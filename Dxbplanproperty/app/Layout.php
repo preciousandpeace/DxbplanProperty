@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Akaunting\Money\Currency;
+use Akaunting\Money\Money;
 
 class Layout extends Model
 {
@@ -17,4 +19,9 @@ class Layout extends Model
 
         return $this->belongsTo('App\Property');
     }
+
+	public function convertPrice() {
+
+		return Money::USD($this->price, true); // '$500.00' converted
+	}
 }

@@ -17,8 +17,8 @@ Route::get('contact', 'PropertyController@contactUs')->name('property.contactUs'
 
 Route::get('about', 'PropertyController@aboutUs')->name('property.aboutUs');
 
-Route::get('properties', 'PropertyController@properties')->name('property.properties');
-Route::get('propertiesdetails', 'PropertyController@getAllProperties')->name('property.propertiesdetails');
+Route::get('properties', 'PropertyController@getAllProperties')->name('property.properties');
 
-//Route::post('properties/{property}', 'PropertyController@getAllProperties')->name('property.properties');
+Route::get('property/{name}', 'PropertyController@getProperty')->name('property.property');
+
 

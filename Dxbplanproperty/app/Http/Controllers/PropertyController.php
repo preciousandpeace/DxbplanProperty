@@ -38,36 +38,36 @@ class PropertyController extends Controller
 		return view('contactUs');
 	}
 
-	/**
-	 * Get all the properties and categories too
-	 *
-	 * @return \Illuminate\Http\Response
-	 */
-	public function properties()
-	{
-
-		return view('properties');
-	}
+//	/**
+//	 * Get all the properties and categories too
+//	 *
+//	 * @return \Illuminate\Http\Response
+//	 */
+//	public function properties()
+//	{
+//
+//		return view('properties');
+//	}
 
     public function getAllProperties()
     {
+    	$layouts = Layout::all();
 
-        $name = Layout::where('name', '=', request()->property)->first();
-        if (request()->property) {
-            $property = Property::where('layout_id', $name->id)->paginate(6);
-        } else {
-
-            $property = Property::paginate(6);
-        }
-
-        $layouts  = Layout::all();
-
-        return view('propertiesdetails', [
-            'properties' 	=> $property,
-            'layouts' 		=> $layouts,
-        ]);
+        return view('properties', [
+        	'layouts'	=>	$layouts
+		]);
     }
 
+    public function getProperty($name)
+    {
+        $propertyName = Layout::where('slug', '=', $name)->firstOrFail();
 
+        $propertyDetails = Layout::where('slug', $propertyName->slug)->firstOrFail();
 
+		$property = Property::where('layout_id', (int)$propertyName->id)->get();
+        return view('property', [
+            'properties' 			=> $property,
+			'propertyDetails'		=> $propertyDetails
+        ]);
+    }
 }

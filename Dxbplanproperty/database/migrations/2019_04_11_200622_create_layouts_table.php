@@ -14,9 +14,11 @@ class CreateLayoutsTable extends Migration
     public function up()
     {
         Schema::create('layouts', function (Blueprint $table) {
-			$table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
+            $table->string('slug')->unique();
+            $table->integer('price');
+            $table->text('image');
             $table->timestamps();
         });
     }
