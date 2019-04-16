@@ -15,7 +15,10 @@ class PropertyController extends Controller
      */
     public function index()
     {
-        return view('landing-page');
+    	$layouts = Layout::all();
+        return view('landing-page', [
+        	'layouts'		=> $layouts
+		]);
     }
 
 	/**

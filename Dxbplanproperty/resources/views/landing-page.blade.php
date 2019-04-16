@@ -766,50 +766,19 @@
         </div>
         <div class="container">
             <div class="row">
+                @foreach($layouts as $layout)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
                     <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/place1.jpg')}}" alt="place1" class="big-img">
+                        <img src="{{asset('assets/img/'.$layout->image. '.jpg')}}" alt="place1" class="big-img">
                         <div class="mask">
                             <h2>O2 Tower</h2>
 
-                            <a href="{{route('property.property', 1)}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.property', $layout->slug)}}" class="btn btn-border">Learn more</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInUp delay-04s">
-                    <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/place2.jpg')}}" alt="place2" class="big-img">
-                        <div class="mask">
-                            <h2>Regina Tower</h2>
-
-                            <a href="{{route('property.property', 2)}}" class="btn btn-border">Learn more</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInDown delay-04s">
-                    <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/place3.jpg')}}" alt="place3" class="big-img">
-                        <div class="mask">
-                            <h2>Samaya 2 <br>Hotel Apartment</h2>
-
-                            <a href="{{route('property.property', 3)}}" class="btn btn-border">Learn more</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInRight delay-04s">
-                    <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/place4.jpg')}}" alt="place4" class="big-img">
-                        <div class="mask">
-                            <h2>The Square</h2>
-
-                            <a href="{{route('property.property', 4)}}" class="btn btn-border">Learn more</a>
-                        </div>
-                    </div>
-
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
