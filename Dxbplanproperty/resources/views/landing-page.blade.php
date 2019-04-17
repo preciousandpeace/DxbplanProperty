@@ -769,7 +769,7 @@
                 @foreach($layouts as $layout)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
                     <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/'.$layout->image. '.jpg')}}" alt="place1" class="big-img">
+                        <img src="{{asset('/assets/img/'.$layout->image. '.jpg')}}" alt="place1" class="big-img">
                         <div class="mask">
                             <h2>O2 Tower</h2>
 
