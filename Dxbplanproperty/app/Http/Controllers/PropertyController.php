@@ -73,4 +73,9 @@ class PropertyController extends Controller
 			'propertyDetails'		=> $propertyDetails
         ]);
     }
+
+    public function getPrivatePolicy()
+    {
+        return view('private');
+    }
 }
