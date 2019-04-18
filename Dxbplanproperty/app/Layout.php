@@ -17,7 +17,7 @@ class Layout extends Model
     public function property()
     {
 
-        return $this->belongsTo('App\Property');
+        return $this->hasMany('App\Property');
     }
 
 	public function convertPrice() {

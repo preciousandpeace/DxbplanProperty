@@ -13,7 +13,7 @@ class Property extends Model
 
 	public function layouts() {
 
-		return $this->hasMany('App\Layout');
+		return $this->belongsTo('App\Layout');
 	}
 
 }
