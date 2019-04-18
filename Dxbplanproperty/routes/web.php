@@ -24,3 +24,8 @@ Route::get('property/{name}', 'PropertyController@getProperty')->name('property.
 Route::get('policy', 'PropertyController@getPrivatePolicy')->name('property.privatepolicy');
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
