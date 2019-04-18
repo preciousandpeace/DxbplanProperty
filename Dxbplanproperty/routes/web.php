@@ -22,3 +22,8 @@ Route::get('properties', 'PropertyController@getAllProperties')->name('property.
 Route::get('property/{name}', 'PropertyController@getProperty')->name('property.property');
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
