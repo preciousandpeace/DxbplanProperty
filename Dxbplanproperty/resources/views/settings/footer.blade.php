@@ -13,10 +13,7 @@
                             Email: <a href="mailto:info@themevessel.com">info@themevessel.com</a>
                         </li>
                         <li>
-                            Phone: <a href="tel:+0477-85x6-552">+XXXX XXXX XXX</a>
-                        </li>
-                        <li>
-                            Fax: +XXXX XXXX XXX
+                            Phone: <a href="tel:+971555396242">+971555396242</a>
                         </li>
                     </ul>
 
@@ -46,6 +43,9 @@
                         </li>
                         <li>
                             <a href="{{route('property.aboutUs')}}"><i class="fa fa-angle-right"></i>About</a>
+                        </li>
+                        <li>
+                            <a href="/admin"><i class="fa fa-angle-right"></i>Admin</a>
                         </li>
 
                     </ul>

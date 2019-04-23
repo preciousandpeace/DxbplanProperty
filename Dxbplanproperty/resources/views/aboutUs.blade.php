@@ -39,8 +39,8 @@
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="services-info-2">
                     <i class="flaticon-hotel-building"></i>
-                    <h5>Apartments Clean</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <h5>Apartments for Rent</h5>
+                    <p>We rent out quality apartment blocks at an affordable price.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -52,16 +52,16 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="services-info-2">
-                    <i class="flaticon-air-conditioner"></i>
-                    <h5>Air conditioning</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <i class="flaticon-house"></i>
+                    <h5>Properties For Sale</h5>
+                    <p>We offer affordable properties and real estate to any customers looking for a property in Dubai.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="services-info-2">
                     <i class="flaticon-call-center-agent"></i>
                     <h5>Support 24/7</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <p>We are happy to take your call anytime of the day.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -73,9 +73,9 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="services-info-2">
-                    <i class="flaticon-room-service"></i>
-                    <h5>Room Service</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <i class="flaticon-office-block"></i>
+                    <h5>Commercial</h5>
+                    <p>We offer office space with beautiful views to make work life less stressful</p>
                 </div>
             </div>
         </div>
