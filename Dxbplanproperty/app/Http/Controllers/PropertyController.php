@@ -64,13 +64,11 @@ class PropertyController extends Controller
     public function getProperty($name)
     {
         $propertyName = Layout::where('slug', '=', $name)->firstOrFail();
-
         $propertyDetails = Layout::where('slug', $propertyName->slug)->firstOrFail();
 
         $count  = 0;
         $count1  = 0;
         $count1sub  = 0;
-
 
 		$property = Property::where('layout_id', (int)$propertyName->id)->get();
 
