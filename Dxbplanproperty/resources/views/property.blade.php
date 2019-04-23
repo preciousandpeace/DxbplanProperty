@@ -48,52 +48,23 @@
                         </div>
                         <!-- main slider carousel items -->
                         <div class="carousel-inner">
-                            <div class="active item carousel-item" data-slide-number="0">
-                                <img src="{{asset('assets/img/property/O2April-01.jpg')}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
+                            @foreach($properties as $images)
+                            <div class="{{$count == 0 ? 'active' : ''}} item carousel-item" data-slide-number="{{$count++}}">
+                                <img src="{{asset('storage/'.$images->image)}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
                             </div>
-                            <div class="item carousel-item" data-slide-number="1">
-                                <img src="{{asset('assets/img/property/O2April-02.jpg')}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
-                            </div>
-                            <div class="item carousel-item" data-slide-number="2">
-                                <img src="{{asset('assets/img/property/O2April-03.jpg')}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
-                            </div>
-                            <div class="item carousel-item" data-slide-number="4">
-                                <img src="http://placehold.it/1110x587" class="img-fluid" alt="properties-photo">
-                            </div>
-                            <div class="item carousel-item" data-slide-number="5">
-                                <img src="http://placehold.it/1110x587" class="img-fluid" alt="properties-photo">
-                            </div>
+                            @endforeach
                             <a class="carousel-control left" href="#propertiesDetailsSlider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
                             <a class="carousel-control right" href="#propertiesDetailsSlider" data-slide="next"><i class="fa fa-angle-right"></i></a>
-
                         </div>
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators smail-properties list-inline nav nav-justified ">
-                            <li class="list-inline-item active">
-                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#propertiesDetailsSlider">
-                                    <img src="{{asset('assets/img/property/O2April-01.jpg')}}" class="img-fluid" alt="properties-photo-smale" style="width: 222px; height: 117px">
-                                </a>
-                            </li>
+                            @foreach($properties as $images)
                             <li class="list-inline-item">
-                                <a id="carousel-selector-1" data-slide-to="1" data-target="#propertiesDetailsSlider">
-                                    <img src="{{asset('assets/img/property/O2April-02.jpg')}}" class="img-fluid" alt="properties-photo-smale" style="width: 222px; height: 117px">
+                                <a id="carousel-selector-{{$count1++}}" data-slide-to="{{$count1sub++}}" data-target="#propertiesDetailsSlider">
+                                    <img src="{{asset('storage/'.$images->image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 222px; height: 117px">
                                 </a>
                             </li>
-                            <li class="list-inline-item">
-                                <a id="carousel-selector-2" data-slide-to="2" data-target="#propertiesDetailsSlider">
-                                    <img src="{{asset('assets/img/property/O2April-03.jpg')}}" class="img-fluid" alt="properties-photo-smale" style="width: 222px; height: 117px">
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a id="carousel-selector-3" data-slide-to="3" data-target="#propertiesDetailsSlider">
-                                    <img src="http://placehold.it/222x117" class="img-fluid" alt="properties-photo-smale">
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a id="carousel-selector-4" data-slide-to="4" data-target="#propertiesDetailsSlider">
-                                    <img src="http://placehold.it/222x117" class="img-fluid" alt="properties-photo-smale">
-                                </a>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>

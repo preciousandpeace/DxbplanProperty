@@ -67,10 +67,19 @@ class PropertyController extends Controller
 
         $propertyDetails = Layout::where('slug', $propertyName->slug)->firstOrFail();
 
+        $count  = 0;
+        $count1  = 0;
+        $count1sub  = 0;
+
+
 		$property = Property::where('layout_id', (int)$propertyName->id)->get();
+
         return view('property', [
             'properties' 			=> $property,
-			'propertyDetails'		=> $propertyDetails
+			'propertyDetails'		=> $propertyDetails,
+			'count'					=> $count,
+			'count1'				=> $count1,
+			'count1sub'				=> $count1sub,
         ]);
     }
 
