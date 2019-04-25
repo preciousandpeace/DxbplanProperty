@@ -21,7 +21,7 @@ Route::get('properties', 'PropertyController@getAllProperties')->name('property.
 
 Route::get('property/{name}', 'PropertyController@getProperty')->name('property.property');
 
-Route::get('policy', 'PropertyController@getPrivatePolicy')->name('property.privatepolicy');
+Route::get('policy', 'PropertyController@getPrivatePolicy')->name('property.private');
 
 
 

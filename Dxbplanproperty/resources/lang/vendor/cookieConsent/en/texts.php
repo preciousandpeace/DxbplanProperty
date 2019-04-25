@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'message' => 'Your experience on this site will be improved by allowing cookies ' ."<a style='color: pink;' href='/policy'>Our policy. </a>",
-    'agree' 	=> 'Allow cookies',
+    'message' => 'By clicking "Allow cookies", you agree to our <a href="/policy">Terms of Use, Privacy Policy</a> and Disclaimer. Also your experience on this site will be improved.',
+    'agree' => 'Allow cookies',
 ];

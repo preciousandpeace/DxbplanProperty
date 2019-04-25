@@ -117,107 +117,96 @@
                 <p>Recently added properties in the heart of Dubai.</p>
             </div>
             <div class="row">
+
+
                 <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="property-box-8">
                         <div class="property-photo">
-                            <img src="http://placehold.it/255x170" alt="recent-property" class="img-fluid">
+                            <img src="{{asset('assets/img/home2.jpg')}}" alt="recent-property" class="img-fluid">
                             <div class="date-box">For Sale</div>
                         </div>
                         <div class="detail">
                             <div class="heading">
                                 <h3>
-                                    <a href="properties-details.html">Real Luxury Villa</a>
+                                    <a href="{{route('property.property','pk')}}">name goes here</a>
                                 </h3>
                                 <div class="location">
-                                    <a href="properties-details.html">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 Kathal St. Tampa City,
+                                    <a href="{{route('property.property','pk')}}">
+                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 address pk,
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="properties-listing">
-                                <span>3 Beds</span>
-                                <span>2 Baths</span>
-                                <span>980 sqft</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp delay-04s">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="property-box-8">
                         <div class="property-photo">
-                            <img src="http://placehold.it/255x170" alt="recent-property" class="img-fluid">
+                            <img src="{{asset('assets/img/home3.jpg')}}" alt="recent-property" class="img-fluid">
                             <div class="date-box">For Sale</div>
                         </div>
                         <div class="detail">
                             <div class="heading">
                                 <h3>
-                                    <a href="properties-details.html">Masons Villas</a>
+                                    <a href="{{route('property.property','The_Samaya')}}">name goes here</a>
                                 </h3>
                                 <div class="location">
-                                    <a href="properties-details.html">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 Kathal St. Tampa City,
+                                    <a href="{{route('property.property','The_Samaya')}}">
+                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 address The_Samaya,
                                     </a>
                                 </div>
-                            </div>
-                            <div class="properties-listing">
-                                <span>3 Beds</span>
-                                <span>2 Baths</span>
-                                <span>980 sqft</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp delay-04s">
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="property-box-8">
                         <div class="property-photo">
-                            <img src="http://placehold.it/255x170" alt="recent-property" class="img-fluid">
+                            <img src="{{asset('assets/img/home4.jpg')}}" alt="recent-property" class="img-fluid">
                             <div class="date-box">For Sale</div>
                         </div>
                         <div class="detail">
                             <div class="heading">
                                 <h3>
-                                    <a href="properties-details.html">Luxury Villa</a>
+                                    <a href="{{route('property.property','The_Square')}}">name goes here</a>
                                 </h3>
                                 <div class="location">
-                                    <a href="properties-details.html">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 Kathal St. Tampa City,
+                                    <a href="{{route('property.property','The_Square')}}">
+                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 address The_Square,
                                     </a>
                                 </div>
-                            </div>
-                            <div class="properties-listing">
-                                <span>3 Beds</span>
-                                <span>2 Baths</span>
-                                <span>980 sqft</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInRight delay-04s">
+
+
+                <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="property-box-8">
                         <div class="property-photo">
-                            <img src="http://placehold.it/255x170" alt="recent-property" class="img-fluid">
+                            <img src="{{asset('assets/img/home5.jpg')}}" alt="recent-property" class="img-fluid">
                             <div class="date-box">For Sale</div>
                         </div>
                         <div class="detail">
                             <div class="heading">
                                 <h3>
-                                    <a href="properties-details.html">Park avenue</a>
+                                    <a href="{{route('property.property','The_02')}}">name goes here</a>
                                 </h3>
                                 <div class="location">
-                                    <a href="properties-details.html">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 Kathal St. Tampa City,
+                                    <a href="{{route('property.property','The_02')}}">
+                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 address The_02,
                                     </a>
                                 </div>
-                            </div>
-                            <div class="properties-listing">
-                                <span>3 Beds</span>
-                                <span>2 Baths</span>
-                                <span>980 sqft</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -235,7 +224,7 @@
                 @foreach($layouts as $layout)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
                     <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/'. $layout->image. '.jpg')}}" alt="place1" class="big-img">
+                        <img src="{{asset('app/public/'. $layout->image)}}" alt="place1" class="big-img">
                         <div class="mask">
                             <h2>{{$layout->name}}</h2>
 

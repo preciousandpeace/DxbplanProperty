@@ -38,11 +38,11 @@
                 @foreach($layouts as $layout)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
                     <div class="overview aa overview-box">
-                        <img src="{{asset('assets/img/'. $layout->image. '.jpg')}}" alt="place1" class="big-img">
+                        <img src="{{asset('app/public/'. $layout->image)}}" alt="place1" class="big-img">
                         <div class="mask">
                             <h2>{{$layout->name}}</h2>
 
-                            <a href="{{route('property.property', $layout->slug)}}" class="btn btn-border">Learn more</a>
+                            <a href="{{route('property.property', $layout->slug)}}" class="btn btn-border" style="padding: 5px">Learn more</a>
                         </div>
                     </div>
                     <h5>{{$layout->name}}</h5>
