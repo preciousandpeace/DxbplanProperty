@@ -4152,6 +4152,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .footer-item {

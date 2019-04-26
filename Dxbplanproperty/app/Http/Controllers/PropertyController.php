@@ -16,8 +16,12 @@ class PropertyController extends Controller
     public function index()
     {
     	$layouts = Layout::all();
+
+    	$top4 = Property::orderBy('created_at', 'desc')->take(4)->get();
+
         return view('landing-page', [
-        	'layouts'		=> $layouts
+        	'layouts'		=> $layouts,
+			'top4'			=> $top4
 		]);
     }
 

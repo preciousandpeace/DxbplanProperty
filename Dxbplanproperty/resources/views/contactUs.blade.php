@@ -141,76 +141,68 @@
 @endsection
 
 @section('footer')
-@include('settings.footer')
+@section('footer')
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="footer-item">
+                <h4>Contact Us</h4>
+
+                <ul class="contact-info">
+                    <li>
+                        Address: 20/F Green Road, Dhanmondi, Dhaka
+                    </li>
+                    <li>
+                        Email: <a href="mailto:info@themevessel.com">info@themevessel.com</a>
+                    </li>
+                    <li>
+                        Phone: <a href="tel:+971555396242">+971555396242</a>
+                    </li>
+                </ul>
+
+                <ul class="social-list clearfix">
+                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="footer-item">
+                <h4>
+                    Useful Links
+                </h4>
+                <ul class="links">
+                    <li>
+                        <a href="{{route('property.index')}}"><i class="fa fa-angle-right"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="{{route('property.properties')}}"><i class="fa fa-angle-right"></i>Properties</a>
+                    </li>
+                    <li>
+                        <a href="{{route('property.contactUs')}}"><i class="fa fa-angle-right"></i>Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{route('property.aboutUs')}}"><i class="fa fa-angle-right"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="/admin"><i class="fa fa-angle-right"></i>Admin</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-12">
+            <p class="copy">&copy;  <script>document.write(new Date().getFullYear());</script> <a href="https://pkspiderweb.com/" target="_blank"> PkSpiderWeb</a>. Trademarks and brands are the property of DxbPlanProperty.</p>
+        </div>
+    </div>
+@endsection
 @endsection
 
 
 @section('script')
 @include('settings.js')
-<script src="{{asset('/js/app.js')}}"></script>
-<script>
-    (function () {
-        document.querySelector('#userForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            $("#button").attr("disabled", true);
-
-            // var bla = $('#name').val();
-            // if (bla <= 0) {
-            //     console.log('me');
-            //     return false
-            // }
-            axios.post('/contactForm', {
-                'name':         document.querySelector('#name').value,
-                'email':        document.querySelector('#email').value,
-                'subject':      document.querySelector('#subject').value,
-                'phone':        document.querySelector('#phone').value,
-                'message':      document.querySelector('#message').value,
-            })
-                .then( (response) => {
-                        //remove all error messages
-                        const errorMessages = document.querySelectorAll('.text-danger');
-                        errorMessages.forEach( (element) => element.textContent = '');
-
-                        // remove all form controls with highlighted text boxes
-                        const formControls = document.querySelectorAll('.form-control');
-                        formControls.forEach( (element) => element.classList.remove('border', 'border-danger'));
-
-                        // Reset the form and add the success Message at the buttom of the page
-                        this.reset();
-                        this.insertAdjacentHTML('afterend','<div id="success" class="alert alert-success">Form submitted successfully!</div>');
-                    // document.getElementById('success').scrollIntoView();
-
-                    // Enable the button after some seconds
-                    $("#button").attr("disabled", false)
-                })
-                .catch( (error) => {
-                    const errors            = error.response.data.errors;
-                    const firstItem         = Object.keys(errors)[0];
-                    const firstItemDom      = document.getElementById(firstItem);
-                    const firstErrorMessage = errors[firstItem][0];
-
-                    // Scroll to the error message
-                    // firstItemDom.scrollIntoView({behavior: "smooth"});
-
-                    //remove all error messages
-                    const errorMessages = document.querySelectorAll('.text-danger');
-                    errorMessages.forEach( (element) => element.textContent = '');
-
-                    // Show the error message
-                    firstItemDom.insertAdjacentHTML('afterend', `<div class="text-danger">${firstErrorMessage}</div>`);
-
-                    // remove all form controls with highlighted text boxes
-                    const formControls = document.querySelectorAll('.form-control');
-                    formControls.forEach( (element) => element.classList.remove('border', 'border-danger'));
-
-
-                    // Highlight the form control with red backgorund
-                    firstItemDom.classList.add('border', 'border-danger');
-
-                    //Enable the button
-                    $("#button").attr("disabled", false);
-                });
-        })
-    })();
-</script>
 @endsection
