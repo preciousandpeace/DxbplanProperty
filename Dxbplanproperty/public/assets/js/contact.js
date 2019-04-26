@@ -31,7 +31,7 @@
 
                 // Reset the form and add the success Message at the buttom of the page
                 this.reset();
-                this.insertAdjacentHTML('afterend','<div id="success" class="alert alert-success">Form submitted successfully!</div>');
+                this.insertAdjacentHTML('afterend','<div id="success" class="alert alert-success">Form submitted successfully!<a class="close" data-dismiss="alert">×</a></div>');
                 // document.getElementById('success').scrollIntoView();
 
                 // Enable the button after some seconds
