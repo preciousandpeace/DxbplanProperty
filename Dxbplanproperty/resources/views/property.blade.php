@@ -202,36 +202,36 @@
                         <h3 class="heading">Leave a Comment</h3>
                         <div class="container">
                             <div class="row">
-                                <form action="#" method="GET" enctype="multipart/form-data">
+                                <form action="{{route('contact.store') }}" method="POST" enctype="multipart/form-data" id="userForm">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group name">
-                                                <input type="text" name="name" class="form-control" placeholder="Name">
+                                                <input type="text" id="name" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : ''}}" placeholder="Name">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group email">
-                                                <input type="email" name="email" class="form-control" placeholder="Email">
+                                                <input type="email" id="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : ''}}" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group subject">
-                                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                                <input type="text" id="subject" name="subject" class="form-control{{ $errors->has('subject') ? ' is-invalid' : ''}}" placeholder="Subject">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group number">
-                                                <input type="text" name="phone" class="form-control" placeholder="Number">
+                                                <input type="text" id="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : ''}}" placeholder="Number">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="form-group message">
-                                                <textarea class="form-control" name="message" placeholder="Write message"></textarea>
+                                                <textarea class="form-control{{ $errors->has('message') ? ' is-invalid' : ''}}" id="message" name="message" placeholder="Write message"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pb-3">
                                             <div class="send-btn">
-                                                <button type="submit" class="btn btn-color btn-md btn-message">Send Message</button>
+                                                <button type="submit" id="button" class="btn btn-color btn-md btn-message">Send Message</button>
                                             </div>
                                         </div>
                                     </div>

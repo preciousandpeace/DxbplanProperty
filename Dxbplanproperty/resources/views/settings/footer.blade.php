@@ -51,22 +51,24 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                 <div class="footer-item clearfix">
                     <h4>Subscribe</h4>
                     <div class="Subscribe-box">
                         <p>Subscribe to get notification about any newly added properties.</p>
-                        <form action="#" method="GET">
-                            <p>
-                                <input type="text" class="form-contact" name="email" placeholder="Enter Address">
-                            </p>
-                            <p>
-                                <button type="submit" name="submitNewsletter" class="btn btn-block btn-color">
+                        <form action="{{route('subscribe.store')}}" method="POST" id="subscribeForm">
+                            @csrf
+                            <div class="form-group email">
+                            <input type="text" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : ''}}" name="email" placeholder="Enter Address">
+                                <div class="pt-2 text-danger error-message"></div>
+                            </div>
+                            <div class="send-btn">
+                                <button type="submit" id="subscribe" name="subscribe" class="btn btn-block btn-color subscribe">
                                     Subscribe
                                 </button>
-                            </p>
+                            </div>
                         </form>
+                        <div class="text-primary success-message pt-2" id="hidden" style="text-align: center"></div>
                     </div>
                 </div>
             </div>

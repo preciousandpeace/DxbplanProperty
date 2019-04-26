@@ -24,3 +24,6 @@
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 <!-- Custom JS Script -->
 <script  src="/assets/js/app.js"></script>
+<script  src="/assets/js/subscribe.js"></script>
+<script  src="/assets/js/contact.js"></script>
+<script src="{{asset('/js/app.js')}}"></script>
