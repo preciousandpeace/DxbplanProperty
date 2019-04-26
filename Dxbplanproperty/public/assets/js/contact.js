@@ -2,6 +2,11 @@
     document.querySelector('#userForm').addEventListener('submit', function (e) {
         e.preventDefault();
         $("#button").attr("disabled", true);
+        // remove the success message
+
+        //remove all error messages
+
+        $('#success').hide();
 
         // var bla = $('#name').val();
         // if (bla <= 0) {

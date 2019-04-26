@@ -202,36 +202,36 @@
                         <h3 class="heading">Leave a Comment</h3>
                         <div class="container">
                             <div class="row">
-                                <form action="#" method="GET" enctype="multipart/form-data">
+                                <form action="{{route('contact.store') }}" method="POST" enctype="multipart/form-data" id="userForm">
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group name">
-                                                <input type="text" name="name" class="form-control" placeholder="Name">
+                                                <input type="text" id="name" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : ''}}" placeholder="Name">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group email">
-                                                <input type="email" name="email" class="form-control" placeholder="Email">
+                                                <input type="email" id="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : ''}}" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group subject">
-                                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                                <input type="text" id="subject" name="subject" class="form-control{{ $errors->has('subject') ? ' is-invalid' : ''}}" placeholder="Subject">
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                             <div class="form-group number">
-                                                <input type="text" name="phone" class="form-control" placeholder="Number">
+                                                <input type="text" id="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : ''}}" placeholder="Number">
                                             </div>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="form-group message">
-                                                <textarea class="form-control" name="message" placeholder="Write message"></textarea>
+                                                <textarea class="form-control{{ $errors->has('message') ? ' is-invalid' : ''}}" id="message" name="message" placeholder="Write message"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pb-3">
                                             <div class="send-btn">
-                                                <button type="submit" class="btn btn-color btn-md btn-message">Send Message</button>
+                                                <button type="submit" id="button" class="btn btn-color btn-md btn-message">Send Message</button>
                                             </div>
                                         </div>
                                     </div>
@@ -251,63 +251,7 @@
 @endsection
 
 @section('footer')
-    <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="footer-item">
-                <h4>Contact Us</h4>
-
-                <ul class="contact-info">
-                    <li>
-                        Address: 20/F Green Road, Dhanmondi, Dhaka
-                    </li>
-                    <li>
-                        Email: <a href="mailto:info@themevessel.com">info@themevessel.com</a>
-                    </li>
-                    <li>
-                        Phone: <a href="tel:+971555396242">+971555396242</a>
-                    </li>
-                </ul>
-
-                <ul class="social-list clearfix">
-                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#" class="rss"><i class="fa fa-rss"></i></a></li>
-                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="footer-item">
-                <h4>
-                    Useful Links
-                </h4>
-                <ul class="links">
-                    <li>
-                        <a href="{{route('property.index')}}"><i class="fa fa-angle-right"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href="{{route('property.properties')}}"><i class="fa fa-angle-right"></i>Properties</a>
-                    </li>
-                    <li>
-                        <a href="{{route('property.contactUs')}}"><i class="fa fa-angle-right"></i>Contact</a>
-                    </li>
-                    <li>
-                        <a href="{{route('property.aboutUs')}}"><i class="fa fa-angle-right"></i>About</a>
-                    </li>
-                    <li>
-                        <a href="/admin"><i class="fa fa-angle-right"></i>Admin</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xl-12">
-            <p class="copy">&copy;  <script>document.write(new Date().getFullYear());</script> <a href="https://pkspiderweb.com/" target="_blank"> PkSpiderWeb</a>. Trademarks and brands are the property of DxbPlanProperty.</p>
-        </div>
-    </div>
+    @include('settings.footer')
 @endsection
 
 
