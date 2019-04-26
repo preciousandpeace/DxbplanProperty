@@ -24,6 +24,9 @@ Route::get('property/{name}', 'PropertyController@getProperty')->name('property.
 Route::get('policy', 'PropertyController@getPrivatePolicy')->name('property.private');
 
 
+Route::post('contactForm', 'ContactController@store')->name('contact.store');
+
+
 
 
 Route::group(['prefix' => 'admin'], function () {
