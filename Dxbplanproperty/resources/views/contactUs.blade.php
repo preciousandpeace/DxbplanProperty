@@ -141,7 +141,6 @@
 @endsection
 
 @section('footer')
-@section('footer')
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
             <div class="footer-item">
@@ -200,8 +199,6 @@
         </div>
     </div>
 @endsection
-@endsection
-
 
 @section('script')
 @include('settings.js')
