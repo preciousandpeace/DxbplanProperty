@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Contact;
+use App\Mail\ContactEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -54,13 +56,21 @@ class ContactController extends Controller
 
 		$contact->save();
 
-//		session()->flash('success_message', 'Thanks for contacting us, we will get in touch');
+//		$data = array([
+//			'name'			=> $request->name,
+//			'email'			=> $request->email,
+//			'subject'		=> $request->subject,
+//			'phone'			=> $request->phone,
+//			'message'		=> $request->message
+//		]);
+
+		Mail::to('kestherigboeli1@gmail.com')
+			->send(new ContactEmail($contact));
 
 		return response()->json([
 			'success' 	=> true,
 			'message'	=> 'Form has been submitted'
 		]);
-//		return back()->with('success_message', 'Thanks for contacting us, we will get in touch');
     }
 
     /**
