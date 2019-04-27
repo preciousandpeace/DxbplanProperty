@@ -14,6 +14,9 @@
                 // remove all the error message
                 $('div.error-message').text('');
 
+                // remove the value
+                $('input:text').val('');
+
                 // Enable the button after some seconds
                 $("#subscribe").attr("disabled", false)
             })
