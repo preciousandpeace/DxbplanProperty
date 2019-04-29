@@ -18,6 +18,7 @@ class CreateLayoutsTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->integer('price');
+            $table->text('address');
             $table->text('image');
             $table->timestamps();
         });

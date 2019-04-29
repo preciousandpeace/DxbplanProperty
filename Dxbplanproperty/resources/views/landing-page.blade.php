@@ -122,13 +122,13 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="property-box-8">
                         <div class="property-photo">
-                            <img src="{{asset('storage/'.$top->image)}}" alt="recent-property" class="img-fluid">
+                            <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}"><img src="{{asset('app/public/'.$top->image)}}" alt="recent-property" class="img-fluid"></a>
                             <div class="date-box">For Sale</div>
                         </div>
                         <div class="detail">
                             <div class="heading">
                                 <h3>
-                                    <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}">name goes here</a>
+                                    <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}">{{$top->name}}</a>
                                 </h3>
                                 <div class="location">
                                     <a href="{{route('property.property', $top->name)}}">
