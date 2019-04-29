@@ -16,10 +16,10 @@ class CreateLayoutsTable extends Migration
         Schema::create('layouts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('slug')->unique();
-            $table->integer('price');
-            $table->text('address');
-            $table->text('image');
+            $table->string('slug')->unique()->index();
+            $table->text('price');
+            $table->string('address');
+            $table->text('image')->nullable();
             $table->timestamps();
         });
     }
