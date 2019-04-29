@@ -40,7 +40,7 @@ class ContactController extends Controller
 
 		$request->validate([
 			'name' => 'required|max:200',
-			'email' => 'required|email|unique:contacts',
+			'email' => 'required|email',
 			'subject' => 'required',
 			'phone' => 'required',
 			'message' => 'required',
@@ -55,14 +55,6 @@ class ContactController extends Controller
 		$contact->message 		= $request->message;
 
 		$contact->save();
-
-//		$data = array([
-//			'name'			=> $request->name,
-//			'email'			=> $request->email,
-//			'subject'		=> $request->subject,
-//			'phone'			=> $request->phone,
-//			'message'		=> $request->message
-//		]);
 
 		Mail::to('kestherigboeli1@gmail.com')
 			->send(new ContactEmail($contact));

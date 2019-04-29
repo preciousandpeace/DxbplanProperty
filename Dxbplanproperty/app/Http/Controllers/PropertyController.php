@@ -17,7 +17,7 @@ class PropertyController extends Controller
     {
     	$layouts = Layout::all();
 
-    	$top4 = Property::orderBy('created_at', 'desc')->take(4)->get();
+    	$top4 = Layout::orderBy('created_at', 'desc')->take(4)->get();
 
         return view('landing-page', [
         	'layouts'		=> $layouts,
@@ -74,7 +74,7 @@ class PropertyController extends Controller
         $count1  = 0;
         $count1sub  = 0;
 
-		$property = Property::where('layout_id', (int)$propertyName->id)->get();
+		$property = Property::where('layout_id', (int)$propertyName->id)->firstOrFail();
 
         return view('property', [
             'properties' 			=> $property,
