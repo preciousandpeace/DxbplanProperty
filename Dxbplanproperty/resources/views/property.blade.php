@@ -50,7 +50,7 @@
                         <div class="carousel-inner">
                             @foreach($properties as $images)
                             <div class="{{$count == 0 ? 'active' : ''}} item carousel-item" data-slide-number="{{$count++}}">
-                                <img src="{{asset('app/public/'.$images->image)}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
+                                <img src="{{asset('app/public/'.$images->image)}}" class="img-fluid" alt="properties-photo" style="width: 1000px; height: 500px">
                             </div>
                             @endforeach
                             <a class="carousel-control left" href="#propertiesDetailsSlider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -61,7 +61,7 @@
                             @foreach($properties as $images)
                             <li class="list-inline-item">
                                 <a id="carousel-selector-{{$count1++}}" data-slide-to="{{$count1sub++}}" data-target="#propertiesDetailsSlider">
-                                    <img src="{{asset('app/public/'.$images->image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 222px; height: 117px">
+                                    <img src="{{asset('app/public/'.$images->image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 190px; height: 117px">
                                 </a>
                             </li>
                             @endforeach

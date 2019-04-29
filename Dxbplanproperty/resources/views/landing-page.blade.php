@@ -122,7 +122,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInLeft delay-04s">
                     <div class="property-box-8">
                         <div class="property-photo">
-                            <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}"><img src="{{asset('app/public/'.$top->image)}}" alt="recent-property" class="img-fluid"></a>
+                            <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}"><img src="{{asset('app/public/'.$top->image)}}" alt="recent-property" class="img-fluid" style="width: 330px; height: 220px"></a>
                             <div class="date-box">For Sale</div>
                         </div>
                         <div class="detail">
