@@ -131,8 +131,8 @@
                                     <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}">{{$top->name}}</a>
                                 </h3>
                                 <div class="location">
-                                    <a href="{{route('property.property', $top->name)}}">
-                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>123 address pk,
+                                    <a href="{{route('property.property',str_replace(' ', '_',$top->name))}}">
+                                        <i class="flaticon-facebook-placeholder-for-locate-places-on-maps"></i>{{$top->address}},
                                     </a>
                                 </div>
                             </div>
