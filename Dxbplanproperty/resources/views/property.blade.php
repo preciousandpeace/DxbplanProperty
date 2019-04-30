@@ -37,7 +37,7 @@
                                 <div class="col-md-12">
                                     <div class="pull-left">
                                         <h3>{{$propertyDetails->name}}</h3>
-                                        <p><i class="fa fa-map-marker"></i> 20/F Green Road, Dhanmondi, Dhaka</p>
+                                        <p><i class="fa fa-map-marker"></i> {{$propertyDetails->address}}</p>
                                     </div>
                                     <div class="p-r">
                                         <h3>{{$propertyDetails->convertPrice()}}</h3>
@@ -51,7 +51,7 @@
 
                             @foreach (json_decode($properties->images) as $image)
                                 <div class="{{$count == 0 ? 'active' : ''}} item carousel-item" data-slide-number="{{$count++}}">
-                                    <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo" style="width: 1000px; height: 500px">
+                                    <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
                                 </div>
                             @endforeach
                             <a class="carousel-control left" href="#propertiesDetailsSlider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -62,7 +62,7 @@
                             @foreach (json_decode($properties->images) as $image)
                                 <li class="list-inline-item">
                                     <a id="carousel-selector-{{$count1++}}" data-slide-to="{{$count1sub++}}" data-target="#propertiesDetailsSlider">
-                                        <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 190px; height: 117px">
+                                        <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 200px; height: 117px">
                                     </a>
                                 </li>
                             @endforeach
@@ -92,6 +92,7 @@
                             <div class="tab-pane fade active show" id="one" role="tabpanel" aria-labelledby="one-tab">
                                 <h3 class="heading">Property Description</h3>
                                 <p>{{$properties->description}}</p>
+                                <p></p>
                             </div>
 
 
@@ -105,7 +106,7 @@
                                 <div class="section location">
                                     <h3 class="heading">Property Location</h3>
                                     <div class="map">
-                                        <div id="contactMap" class="contact-map"></div>
+                                        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q={{str_replace(',', '%2C', str_replace('/', '%2F', str_replace(' ', '%20', $propertyDetails->address)))}}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style></div>
                                     </div>
                                 </div>
                             </div>
