@@ -154,7 +154,7 @@
         </div>
         <div class="container">
             <div class="row">
-                @foreach($layouts as $layout)
+                @foreach($top4 as $layout)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-pad wow fadeInLeft delay-04s">
                     <div class="overview aa overview-box">
                         <img src="{{asset('app/public/'. $layout->image)}}" alt="place1" class="big-img">
@@ -168,6 +168,10 @@
                 </div>
                 @endforeach
             </div>
+        </div>
+
+        <div class="send-btn pt-4 text-center">
+            <a href="{{route('property.properties')}}"><button type="submit" id="button" class="btn btn-color btn-md btn-message">Send Message</button></a>
         </div>
     </div>
 </div>

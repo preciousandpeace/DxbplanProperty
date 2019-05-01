@@ -16,28 +16,28 @@ class LayoutTableSeeder extends Seeder
             'name' => 'The Regina',
             'slug' => 'The_Regina',
             'address' => 'This is The Regina address',
-            'image' => 'place1',
+            'image' => 'layouts/April2019/C4jOUhlwfU72kfNiZHCh.jpg',
             'price' => 109000,
         ]);
         \App\Layout::create([
             'name' => 'The 02',
             'slug' => 'The_02',
             'address' => 'This is The 02 address',
-            'image' => 'place2',
+            'image' => 'layouts/April2019/zrlEcyGlXmSTRURUwUWS.jpg',
             'price' => 109000
         ]);
         \App\Layout::create([
             'name' => 'The Square',
             'slug' => 'The_Square',
             'address' => 'This is The Square address',
-            'image' => 'place3',
+            'image' => 'layouts/April2019/cdCbrCXZ2cseB6FTFo26.jpg',
             'price' => 109000,
         ]);
         \App\Layout::create([
             'name' => 'The samaya',
             'slug' => 'The_Samaya',
             'address' => 'This is The samaya address',
-            'image' => 'place4',
+            'image' => 'layouts/April2019/YcXGqjjL0lJn2J18p1Bb.jpg',
             'price' => 109000,
         ]);
     }

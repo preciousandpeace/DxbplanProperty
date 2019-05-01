@@ -91,7 +91,7 @@
                         <div class="tab-content" id="carTabContent">
                             <div class="tab-pane fade active show" id="one" role="tabpanel" aria-labelledby="one-tab">
                                 <h3 class="heading">Property Description</h3>
-                                <p>{{$properties->description}}</p>
+                                <p>{!! $properties->description !!}</p>
                                 <p></p>
                             </div>
 
