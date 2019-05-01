@@ -20,6 +20,7 @@ class CreateLayoutsTable extends Migration
             $table->text('price');
             $table->string('address');
             $table->text('image')->nullable();
+            $table->text('video')->nullable();
             $table->timestamps();
         });
     }

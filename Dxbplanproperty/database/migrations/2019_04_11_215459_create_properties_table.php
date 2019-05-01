@@ -17,12 +17,14 @@ class CreatePropertiesTable extends Migration
             $table->bigIncrements('id');
 			$table->text('description')->nullable();
 			$table->text('images')->nullable();
+			$table->text('floor_plan')->nullable();
+			$table->text('brochure')->nullable();
 			$table->integer('layout_id')->unsigned()->index();
             $table->timestamps();
         });
 
 		Schema::table('properties', function ($table) {
-			$table->foreign('layout_id')->references('id')->on('layouts');
+			$table->foreign('layout_id')->references('id')->on('layouts')->onDelete('cascade');
 		});
     }
 

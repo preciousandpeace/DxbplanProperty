@@ -42,7 +42,7 @@ class ContactController extends Controller
 			'name' => 'required|max:200',
 			'email' => 'required|email',
 			'subject' => 'required',
-			'phone' => 'required',
+			'phone' => 'required|numeric|regex:/(01)[0-9]{9}/',
 			'message' => 'required',
 		]);
 
