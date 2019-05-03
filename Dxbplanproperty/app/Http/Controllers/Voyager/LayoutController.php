@@ -29,7 +29,10 @@ class LayoutController extends VoyagerBaseController
 	 */
 	public function store(Request $request)
 	{
-		$request['slug']	= str_replace(' ','_', strtolower($request->slug));
+		$request['slug']= str_replace(' ','_', strtolower($request->name));
+		$request->validate([
+			'slug' => 'required|unique:layouts',
+		]);
 
 		$slug = $this->getSlug($request);
 
