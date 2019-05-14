@@ -101,12 +101,15 @@
                                 </div>
 
 
-                                <div class="tab-pane fade " id="3" role="tabpanel" aria-labelledby="3-tab">
-                                    <div class="property-video text-center">
+                                <div class="tab-pane fade" id="3" role="tabpanel" aria-labelledby="3-tab">
+                                    <div class="property-video text-center embed-responsive
+                embed-responsive-21by9">
+
                                         <h3 class="heading">Property Video</h3>
-                                        <video width="800" controls>
+                                        <video width="800" class="embed-responsive-item" controls>
                                             @foreach (json_decode($propertyDetails->video) as $pk)
                                                 <source src="{{asset('app/public/'.$pk->download_link)}}" type="video/mp4">
+                                            <source src="{{asset('app/public/'.$pk->download_link)}}" type="video/ogg">
                                             @endforeach
                                             Your browser does not support HTML5 video.
                                         </video>
