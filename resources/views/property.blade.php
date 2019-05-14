@@ -52,7 +52,7 @@
 
                                 @foreach (json_decode($properties->images) as $image)
                                     <div class="{{$count == 0 ? 'active' : ''}} item carousel-item" data-slide-number="{{$count++}}">
-                                        <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
+                                        <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo">
                                     </div>
                                 @endforeach
                                 <a class="carousel-control left" href="#propertiesDetailsSlider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -61,9 +61,9 @@
                             <!-- main slider carousel nav controls -->
                             <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                                 @foreach (json_decode($properties->images) as $image)
-                                    <li class="list-inline-item" style="width: 72px; height: 42px">
+                                    <li class="list-inline-item">
                                         <a id="carousel-selector-{{$count1++}}" data-slide-to="{{$count1sub++}}" data-target="#propertiesDetailsSlider">
-                                            <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 70px; height: 40px">
+                                            <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo-smale">
                                         </a>
                                     </li>
                                 @endforeach
@@ -125,7 +125,7 @@
 
                                                     @foreach (json_decode($properties->floor_plan) as $floor_plan)
                                                         <div class="{{$countpk == 0 ? 'active' : ''}} item carousel-item" data-slide-number="{{$countpk++}}">
-                                                            <img src="{{asset('app/public/'.$floor_plan)}}" class="img-fluid" alt="properties-photo" style="width: 1110px; height: 587px">
+                                                            <img src="{{asset('app/public/'.$floor_plan)}}" class="img-fluid" alt="properties-photo">
                                                         </div>
                                                     @endforeach
                                                     <a class="carousel-control left" href="#propertiesDetailsSliderpk" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -134,9 +134,9 @@
                                                 <!-- main slider carousel nav controls -->
                                                 <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                                                     @foreach (json_decode($properties->floor_plan) as $floor_plan)
-                                                        <li class="list-inline-item" style="width: 72px; height: 42px">
+                                                        <li class="list-inline-item">
                                                             <a id="carousel-selector-{{$count1pk++}}" data-slide-to="{{$count1subpk++}}" data-target="#propertiesDetailsSliderpk">
-                                                                <img src="{{asset('app/public/'.$floor_plan)}}" class="img-fluid" alt="properties-photo-smale" style="width: 70px; height: 40px">
+                                                                <img src="{{asset('app/public/'.$floor_plan)}}" class="img-fluid" alt="properties-photo-smale">
                                                             </a>
                                                         </li>
                                                     @endforeach
