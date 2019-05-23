@@ -1,10 +1,10 @@
-/*$(function () {
+$(function () {
 
     "use strict";
 
     // On window's load
     $(window).on('load', function () {
-       /!* populateColorPlates();*!/
+        populateColorPlates();
         setTimeout(function () {
             $(".page_loader").fadeOut("fast");
             $('link[id="style_sheet"]').attr('href', 'assets/css/skins/default.css');
@@ -165,11 +165,11 @@
 
     // Dropzone initialization
     Dropzone.autoDiscover = false;
-    /!*$(function () {
+    $(function () {
         $("div#myDropZone").dropzone({
             url: "/file-upload"
         });
-    });*!/
+    });
 
     // Full  Page Search Activation
     $(function () {
@@ -194,7 +194,7 @@
 
 
 
- /!*   // Page scroller initialization.
+    // Page scroller initialization.
     $.scrollUp({
         scrollName: 'page_scroller',
         scrollDistance: 300,
@@ -211,7 +211,7 @@
         activeOverlay: false,
         zIndex: 2147483647
     });
-*!/
+
 
     // Magnify activation
     $('.property-magnify-gallery').each(function() {
@@ -261,11 +261,11 @@
     });
 
     // Select picket activation
-    /!*$('select').selectBox(
+    $('select').selectBox(
         {
             mobile: true,
         }
-    );*!/
+    );
 
 
     // Dropdown activation
@@ -303,7 +303,7 @@
         });
     });
 
-    /!*$('.slick-fullwidth').slick({
+    $('.slick-fullwidth').slick({
         centerMode: true,
         centerPadding: '15%',
         slidesToShow: 3,
@@ -325,7 +325,7 @@
                 settings: {centerPadding: '10px', slidesToShow: 1}
             }
         ]
-    });*!/
+    });
 
 
     // Modal activation
@@ -404,7 +404,7 @@
         // Add background image
         //$.backstretch('../img/nature.jpg');
         var endDate = "December  27, 2019 15:03:25";
-       /!* $('.countdown.simple').countdown({ date: endDate });*!/
+        $('.countdown.simple').countdown({ date: endDate });
         $('.countdown.styled').countdown({
             date: endDate,
             render: function(data) {
@@ -581,7 +581,7 @@
     }
 
 
-    /!* ---- particles.js config ---- *!/
+    /* ---- particles.js config ---- */
     if($('#particles-banner').length > 0){
         loadParticlesBackground();
     }
@@ -716,7 +716,7 @@
     $(document).on('click', '.setting-button', function () {
         $('.option-panel').toggleClass('option-panel-collased');
     });
-});*/
+});
 
 // mCustomScrollbar initialization
 (function ($) {

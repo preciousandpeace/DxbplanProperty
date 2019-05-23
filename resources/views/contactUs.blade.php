@@ -55,7 +55,7 @@
                         </ul>
                     </div>
                 @endif
-
+<div id="dxbform"
                 <form method="POST" action="{{route('contact.store') }}" id="userForm" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
@@ -92,6 +92,7 @@
                     </div>
                 </form>
             </div>
+            </div>
 
 
             <div class=" offset-lg-1 col-lg-4 offset-md-0 col-md-5">
@@ -116,7 +117,7 @@
                         <i class="fa fa-envelope"></i>
                         <div class="media-body">
                             <h5 class="mt-0">Email Address</h5>
-                            <p><a href="mailto:info@dxbplanproperty.com">info@dxbplanproperty.com</a></p>
+                            <p><a href="mailto:info@dxbplanproperty.com?bcc=pekunapara@gmail.com, kestherigboeli1@gmail.com">info@dxbplanproperty.com</a></p>
 
                         </div>
                     </div>
@@ -151,7 +152,7 @@
                         Dubai Marina Pinnacle Tower 15th floor Dubai Marina
                     </li>
                     <li>
-                        Email: <a href="mailto:info@dxbplanproperty.com">info@dxbplanproperty.com</a>
+                        Email: <a href="mailto:info@dxbplanproperty.com?bcc=pekunapara@gmail.com, kestherigboeli1@gmail.com">info@dxbplanproperty.com</a>
                     </li>
                     <li>
                         Phone: <a href="tel:+971555396242">+971555396242</a>

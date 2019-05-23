@@ -10,7 +10,7 @@
                             Dubai Marina Pinnacle Tower 15th floor Dubai Marina
                         </li>
                         <li>
-                            Email: <a href="mailto:info@dxbplanproperty.com">info@dxbplanproperty.com</a>
+                            Email: <a href="mailto:info@dxbplanproperty.com?bcc=pekunapara@gmail.com, kestherigboeli1@gmail.com">info@dxbplanproperty.com</a>
                         </li>
                         <li>
                             Phone: <a href="tel:+971555396242">+971555396242</a>

@@ -32,43 +32,46 @@ class ContactController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
 
-		$request->validate([
-			'name' => 'required|max:200',
-			'email' => 'required|email',
-			'subject' => 'required',
-			'phone' => 'required|numeric|regex:/(01)[0-9]{9}/',
-			'message' => 'required',
-		]);
+        $request->validate([
+            'name' => 'required|max:200',
+            'email' => 'required|email',
+            'subject' => 'required',
+            'phone' => 'required|numeric|regex:/(01)[0-9]{9}/',
+            'message' => 'required',
+        ]);
 
-		$contact = new Contact();
+        $contact = new Contact();
 
-		$contact->full_name 	= $request->name;
-		$contact->email 		= $request->email;
-		$contact->subject 		= $request->subject;
-		$contact->phone_number 	= $request->phone;
-		$contact->message 		= $request->message;
+        $contact->full_name = $request->name;
+        $contact->email = $request->email;
+        $contact->subject = $request->subject;
+        $contact->phone_number = $request->phone;
+        $contact->message = $request->message;
 
-		$contact->save();
+        $contact->save();
 
-		Mail::to('kestherigboeli1@gmail.com')
-			->send(new ContactEmail($contact));
+        Mail::to('info@dxbplanproperty.com')
+            ->bcc(['pekunapara@gmail.com', 'kestherigboeli1@gmail.com'])
+            ->send(new ContactEmail($contact));
 
-		return response()->json([
-			'success' 	=> true,
-			'message'	=> 'Form has been submitted'
-		]);
+        //return redirect('#messageSend')->with('success_message', 'Thank you for the message, we would get back to you as soon as possible. If you cannot wait, call us on +2348029913454');
+        return response()->json([
+            'success' => true,
+            'message' => 'Form has been submitted'
+        ]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Contact  $contact
+     * @param  \App\Contact $contact
      * @return \Illuminate\Http\Response
      */
     public function show(Contact $contact)
@@ -79,7 +82,7 @@ class ContactController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Contact  $contact
+     * @param  \App\Contact $contact
      * @return \Illuminate\Http\Response
      */
     public function edit(Contact $contact)
@@ -90,8 +93,8 @@ class ContactController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Contact  $contact
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Contact $contact
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Contact $contact)
@@ -102,7 +105,7 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Contact  $contact
+     * @param  \App\Contact $contact
      * @return \Illuminate\Http\Response
      */
     public function destroy(Contact $contact)

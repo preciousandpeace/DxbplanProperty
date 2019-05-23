@@ -47,7 +47,7 @@
                 <div class="services-info-2">
                     <i class="flaticon-padlock"></i>
                     <h5>Security</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <p>Our building is located in the heart of Dubai. It is fully secured to give our customers peace of mind.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -68,7 +68,7 @@
                 <div class="services-info-2">
                     <i class="flaticon-agreement"></i>
                     <h5>Trusted Agents</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <p>We strive to give our customers the best and most affordable properties or real estate to suit their budget.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">

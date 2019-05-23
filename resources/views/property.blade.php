@@ -61,9 +61,9 @@
                             <!-- main slider carousel nav controls -->
                             <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                                 @foreach (json_decode($properties->images) as $image)
-                                    <li class="list-inline-item">
+                                    <li class="list-inline-item" style="width: 72px; height: 42px">
                                         <a id="carousel-selector-{{$count1++}}" data-slide-to="{{$count1sub++}}" data-target="#propertiesDetailsSlider">
-                                            <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo-smale">
+                                            <img src="{{asset('app/public/'.$image)}}" class="img-fluid" alt="properties-photo-smale" style="width: 70px; height: 40px">
                                         </a>
                                     </li>
                                 @endforeach
@@ -137,9 +137,9 @@
                                                 <!-- main slider carousel nav controls -->
                                                 <ul class="carousel-indicators smail-properties list-inline nav nav-justified">
                                                     @foreach (json_decode($properties->floor_plan) as $floor_plan)
-                                                        <li class="list-inline-item">
+                                                        <li class="list-inline-item" style="width: 72px; height: 42px">
                                                             <a id="carousel-selector-{{$count1pk++}}" data-slide-to="{{$count1subpk++}}" data-target="#propertiesDetailsSliderpk">
-                                                                <img src="{{asset('app/public/'.$floor_plan)}}" class="img-fluid" alt="properties-photo-smale">
+                                                                <img src="{{asset('app/public/'.$floor_plan)}}" class="img-fluid" alt="properties-photo-smale" style="width: 70px; height: 40px">
                                                             </a>
                                                         </li>
                                                     @endforeach

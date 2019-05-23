@@ -37,12 +37,16 @@
         }
     </style>
 </head>
-<body>
-    <p>Hi This is {{$data->full_name}},</p>
-    <p>I have some query like {{$data->message}}</p>
-    <p>It would be appreciated, if you got through this feedback</p>
-    <a href="{{route('property.index')}}">
-        <span class="butn" href="">Click me</span>
+<body style="alignment: center">
+<h2 style="color: #3cb0fd">This message was sent from dxbplanproperty.com</h2>
+
+<strong>Name:</strong> {{$data->full_name}} <br>
+<strong>Email:</strong> {{$data->email}} <br>
+<strong>Number:</strong> {{$data->phone_number}} <br>
+<strong>Subject:</strong> {{$data->subject}} <br>
+<strong>Message:</strong><p>{{$data->message}}</p><br>
+    <a>
+        <span class="butn" href="dxbplanproperty.com">Click to go to dxbplanproperty</span>
     </a>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

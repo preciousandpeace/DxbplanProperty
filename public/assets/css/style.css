@@ -3827,9 +3827,13 @@ a {
     border: 1px solid #ffffff;
     background: #ffffff;
     outline: 0;
-    color: #ffffff;
+    color: black;
     height: 45px;
     border-radius: 3px;
+}
+
+#dxbform {
+    color: black;
 }
 
 #pkstyle .form-control {
@@ -3839,7 +3843,7 @@ a {
     border: 1px solid #ffffff;
     background: #ffffff;
     outline: 0;
-    color: #ffffff;
+    color: black;
     height: 45px;
     border-radius: 3px;
 }
