@@ -38,18 +38,19 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-
-        $request->validate([
+		$request->validate([
             'name' => 'required|max:200',
             'email' => 'required|email',
-            'subject' => 'required',
-            'phone' => 'required|numeric|regex:/(01)[0-9]{9}/',
-            'message' => 'required',
+            'subject' => 'required|max:50',
+            'phone' => 'required|numeric',
+            'message' => 'required|max:200',
         ]);
 
-        $contact = new Contact();
+		$contact = new Contact();
+		strtolower($request->message);
 
-        $contact->full_name = $request->name;
+
+		$contact->full_name = $request->name;
         $contact->email = $request->email;
         $contact->subject = $request->subject;
         $contact->phone_number = $request->phone;
@@ -57,11 +58,10 @@ class ContactController extends Controller
 
         $contact->save();
 
-        Mail::to('info@dxbplanproperty.com')
-            ->bcc(['pekunapara@gmail.com', 'kestherigboeli1@gmail.com'])
+        Mail::to('kestherigboeli1@gmail.com')
+//            ->bcc(['pekunapara@gmail.com', 'kestherigboeli1@gmail.com'])
             ->send(new ContactEmail($contact));
 
-        //return redirect('#messageSend')->with('success_message', 'Thank you for the message, we would get back to you as soon as possible. If you cannot wait, call us on +2348029913454');
         return response()->json([
             'success' => true,
             'message' => 'Form has been submitted'
