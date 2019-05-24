@@ -61,7 +61,7 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group name">
-                                <input type="text" id="name" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : ''}}" placeholder="Name">
+                                <input type="text" id="name" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : ''}}" placeholder="Name" autofocus>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -76,7 +76,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group number">
-                                <input type="text" id="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : ''}}" placeholder="Number">
+                                <input type="text" id="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : ''}}" placeholder="Number Exmaple +44123456784">
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -84,7 +84,7 @@
                                 <textarea class="form-control{{ $errors->has('message') ? ' is-invalid' : ''}}" id="message" name="message" placeholder="Write message"></textarea>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pb-3">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                             <div class="send-btn">
                                 <button type="submit" id="button" class="btn btn-color btn-md btn-message">Send Message</button>
                             </div>
@@ -203,4 +203,79 @@
 
 @section('script')
 @include('settings.js')
+<script src="{{asset('/js/app.js')}}"></script>
+<script>
+    (function () {
+
+        var me = document.getElementById("button")
+
+        $("#button").click(function(e) {
+            e.preventDefault();
+            $("#button").attr("disabled", true);
+
+            me.innerHTML='<i class="fa fa-spinner fa-spin"></i> Submitting Message Please Wait.......';
+
+            $('#success').hide();
+            axios.post('/contactForm', {
+                'name':         document.querySelector('#name').value,
+                'email':        document.querySelector('#email').value,
+                'subject':      document.querySelector('#subject').value,
+                'phone':        document.querySelector('#phone').value,
+                'message':      document.querySelector('#message').value,
+            })
+                .then( (response) => {
+                    //remove all error messages
+                    const errorMessages = document.querySelectorAll('.text-danger');
+                    errorMessages.forEach( (element) => element.textContent = '');
+
+                    // remove all form controls with highlighted text boxes
+                    const formControls = document.querySelectorAll('.form-control');
+                    formControls.forEach( (element) => element.classList.remove('border', 'border-danger'));
+
+                    // Reset the form and add the success Message at the buttom of the page
+                    $('.form-control').val('')
+
+                    this.insertAdjacentHTML('afterend','<div id="success" class="alert alert-success">Form submitted successfully!<a class="close" data-dismiss="alert">×</a></div>');
+                    // document.getElementById('success').scrollIntoView();
+
+                    // Enable the button after some seconds
+                    $("#button").attr("disabled", false)
+                    me.innerHTML = 'Send Message'
+
+
+                })
+                .catch( (error) => {
+                    console.log(error)
+                    const errors            = error.response.data.errors;
+                    const firstItem         = Object.keys(errors)[0];
+                    // console.log(firstItem);
+                    const firstItemDom      = document.getElementById(firstItem);
+                    const firstErrorMessage = errors[firstItem][0];
+
+                    // Scroll to the error message
+                    // firstItemDom.scrollIntoView({behavior: "smooth"});
+
+                    //remove all error messages
+                    const errorMessages = document.querySelectorAll('.text-danger');
+                    errorMessages.forEach( (element) => element.textContent = '');
+
+                    // Show the error message
+                    firstItemDom.insertAdjacentHTML('afterend', `<div class="text-danger">${firstErrorMessage}</div>`);
+
+                    // remove all form controls with highlighted text boxes
+                    const formControls = document.querySelectorAll('.form-control');
+                    formControls.forEach( (element) => element.classList.remove('border', 'border-danger'));
+
+
+                    // Highlight the form control with red backgorund
+                    firstItemDom.classList.add('border', 'border-danger');
+
+                    //Enable the button
+                    $("#button").attr("disabled", false);
+                    me.innerHTML = 'Send Message'
+                });
+        })
+
+    })();
+</script>
 @endsection
