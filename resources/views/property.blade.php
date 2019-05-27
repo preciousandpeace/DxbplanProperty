@@ -230,37 +230,76 @@
                         <div class="contact-3 mb-60">
                             <h3 class="heading">Leave a Comment</h3>
                             <div class="container">
+
+                                {{--
+                                <div class="col-lg-7 col-md-7 col-md-7">--}}
+                                    {{--@if(session('success_message'))--}}
+                                    {{--
+                                    <div class="alert alert-success">--}}
+                                        {{--{{ session('success_message') }}--}}
+                                        {{--
+                                    </div>
+                                    --}}
+                                    {{--@endif--}}
+                                    {{--
+                                </div>
+                                --}}
+
+
                                 <div class="row" id="pkstyle">
-                                    <form action="{{route('contact.store') }}" method="POST" enctype="multipart/form-data" id="userForm">
+
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                    @endif
+
+                                    <form method="POST" action="{{route('contact.store') }}" id="userForm" enctype="multipart/form-data">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="form-group name">
-                                                    <input type="text" id="name" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : ''}}" placeholder="Name">
+                                                    <input type="text" id="name" name="name"
+                                                           class="form-control{{ $errors->has('name') ? ' is-invalid' : ''}}"
+                                                           placeholder="Name" autofocus>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="form-group email">
-                                                    <input type="email" id="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : ''}}" placeholder="Email">
+                                                    <input id="email" type="email" name="email"
+                                                           class="form-control{{ $errors->has('email') ? ' is-invalid' : ''}}"
+                                                           placeholder="Email">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="form-group subject">
-                                                    <input type="text" id="subject" name="subject" class="form-control{{ $errors->has('subject') ? ' is-invalid' : ''}}" placeholder="Subject">
+                                                    <input id="subject" type="text" name="subject"
+                                                           class="form-control{{ $errors->has('subject') ? ' is-invalid' : ''}}"
+                                                           placeholder="Subject">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                 <div class="form-group number">
-                                                    <input type="text" id="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : ''}}" placeholder="Number">
+                                                    <input type="tel" id="phone" name="phone"
+                                                           class="form-control{{ $errors->has('phone') ? ' is-invalid' : ''}}"
+                                                           placeholder="Phone Number">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="form-group message">
-                                                    <textarea class="form-control{{ $errors->has('message') ? ' is-invalid' : ''}}" id="message" name="message" placeholder="Write message"></textarea>
+                                    <textarea class="form-control{{ $errors->has('message') ? ' is-invalid' : ''}}"
+                                              id="message" name="message" placeholder="Write message"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pb-3">
                                                 <div class="send-btn">
-                                                    <button type="submit" id="button" class="btn btn-color btn-md btn-message">Send Message</button>
+                                                    <button type="submit" id="formButton" class="btn btn-color btn-md btn-message">Send
+                                                        Message
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>

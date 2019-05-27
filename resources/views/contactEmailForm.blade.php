@@ -40,7 +40,7 @@
     </style>
 </head>
 <body style="alignment: center">
-<h2 style="color: #3cb0fd">This message was sent from dxbplanproperty.com</h2>
+<h2 style="color: #3cb0fd">This message was sent from Dxbplanproperty</h2>
 
 <strong>Name:</strong> {{$data->full_name}} <br>
 <strong>Email:</strong> {{$data->email}} <br>
@@ -48,7 +48,7 @@
 <strong>Subject:</strong> {{$data->subject}} <br>
 <strong>Message:</strong> {{$data->message}}<br><br><br>
 <div id="button">
-    <span class="butn" href="dxbplanproperty.com">Click to go to dxbplanproperty</span>
+   <a href="https://dxbplanproperty.com/" target="_blank"> <span class="butn">Click to go to dxbplanproperty</span></a>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

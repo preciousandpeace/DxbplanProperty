@@ -58,8 +58,8 @@ class ContactController extends Controller
 
         $contact->save();
 
-        Mail::to('kestherigboeli1@gmail.com')
-//            ->bcc(['pekunapara@gmail.com', 'kestherigboeli1@gmail.com'])
+        Mail::to('info@dxbplanproperty.com')
+            ->bcc(['pekunapara@gmail.com', 'kestherigboeli1@gmail.com'])
             ->send(new ContactEmail($contact));
 
         return response()->json([

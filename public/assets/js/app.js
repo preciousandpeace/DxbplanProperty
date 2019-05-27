@@ -33,21 +33,20 @@ $(function () {
         doSticky();
     });
 
-    function adjustHeader()
-    {
+    function adjustHeader() {
         var windowWidth = $(window).width();
-        if(windowWidth > 992) {
+        if (windowWidth > 992) {
             if ($(document).scrollTop() >= 100) {
-                if($('.header-shrink').length < 1) {
+                if ($('.header-shrink').length < 1) {
                     $('.sticky-header').addClass('header-shrink');
                 }
-                if($('.do-sticky').length < 1) {
+                if ($('.do-sticky').length < 1) {
                     $('.logo img').attr('src', '/assets/img/logos/black-logo.png');
                 }
             }
             else {
                 $('.sticky-header').removeClass('header-shrink');
-                if($('.do-sticky').length < 1) {
+                if ($('.do-sticky').length < 1) {
                     $('.logo img').attr('src', '/assets/img/logos/logo.png');
                 }
             }
@@ -56,8 +55,7 @@ $(function () {
         }
     }
 
-    function doSticky()
-    {
+    function doSticky() {
         if ($(document).scrollTop() > 40) {
             $('.do-sticky').addClass('sticky-header');
             //$('.do-sticky').addClass('header-shrink');
@@ -128,7 +126,7 @@ $(function () {
 
     // DROPDOWN ON HOVER
 
-   $(".dropdown").on('hover', function () {
+    $(".dropdown").on('hover', function () {
             $('.dropdown-menu', this).stop().fadeIn("fast");
         },
         function () {
@@ -137,20 +135,20 @@ $(function () {
 
 
     // Counter Activation
-    function isCounterElementVisible($elementToBeChecked)
-    {
+    function isCounterElementVisible($elementToBeChecked) {
         var TopView = $(window).scrollTop();
         var BotView = TopView + $(window).height();
         var TopElement = $elementToBeChecked.offset().top;
         var BotElement = TopElement + $elementToBeChecked.height();
         return ((BotElement <= BotView) && (TopElement >= TopView));
     }
+
     $(window).on('scroll', function () {
-        $( ".counter" ).each(function() {
+        $(".counter").each(function () {
             var isOnView = isCounterElementVisible($(this));
-            if(isOnView && !$(this).hasClass('Starting')){
+            if (isOnView && !$(this).hasClass('Starting')) {
                 $(this).addClass('Starting');
-                $(this).prop('Counter',0).animate({
+                $(this).prop('Counter', 0).animate({
                     Counter: $(this).text()
                 }, {
                     duration: 3000,
@@ -162,6 +160,7 @@ $(function () {
             }
         });
     });
+/*
 
     // Dropzone initialization
     Dropzone.autoDiscover = false;
@@ -170,31 +169,30 @@ $(function () {
             url: "/file-upload"
         });
     });
+*/
 
     // Full  Page Search Activation
     $(function () {
-        $('a[href="#full-page-search"]').on('click', function(event) {
+        $('a[href="#full-page-search"]').on('click', function (event) {
             event.preventDefault();
             $('#full-page-search').addClass('open');
             $('#full-page-search > form > input[type="search"]').focus();
         });
 
-        $('#full-page-search, #full-page-search button.close').on('click keyup', function(event) {
+        $('#full-page-search, #full-page-search button.close').on('click keyup', function (event) {
             if (event.target === this || event.target.className === 'close' || event.keyCode === 27) {
                 $(this).removeClass('open');
             }
         });
 
-        $('form').submit(function(event) {
+        $('form').submit(function (event) {
             event.preventDefault();
             return false;
         })
     });
 
 
-
-
-    // Page scroller initialization.
+ /*   // Page scroller initialization.
     $.scrollUp({
         scrollName: 'page_scroller',
         scrollDistance: 300,
@@ -211,14 +209,14 @@ $(function () {
         activeOverlay: false,
         zIndex: 2147483647
     });
-
+*/
 
     // Magnify activation
-    $('.property-magnify-gallery').each(function() {
+    $('.property-magnify-gallery').each(function () {
         $(this).magnificPopup({
             delegate: 'a',
             type: 'image',
-            gallery:{enabled:true}
+            gallery: {enabled: true}
         });
     });
 
@@ -233,8 +231,8 @@ $(function () {
         $(this).append("" +
             "<span class='min-value'></span> " +
             "<span class='max-value'></span>" +
-            "<input class='current-min' type='hidden' name='"+minName+"'>" +
-            "<input class='current-max' type='hidden' name='"+maxName+"'>"
+            "<input class='current-min' type='hidden' name='" + minName + "'>" +
+            "<input class='current-max' type='hidden' name='" + maxName + "'>"
         );
         $(this).slider({
             range: true,
@@ -245,7 +243,7 @@ $(function () {
                 event = event;
                 var currentMin = parseInt(ui.values[0], 10);
                 var currentMax = parseInt(ui.values[1], 10);
-                $(this).children(".min-value").text( currentMin + " " + unit);
+                $(this).children(".min-value").text(currentMin + " " + unit);
                 $(this).children(".max-value").text(currentMax + " " + unit);
                 $(this).children(".current-min").val(currentMin);
                 $(this).children(".current-max").val(currentMax);
@@ -254,22 +252,22 @@ $(function () {
 
         var currentMin = parseInt($(this).slider("values", 0), 10);
         var currentMax = parseInt($(this).slider("values", 1), 10);
-        $(this).children(".min-value").text( currentMin + " " + unit);
+        $(this).children(".min-value").text(currentMin + " " + unit);
         $(this).children(".max-value").text(currentMax + " " + unit);
         $(this).children(".current-min").val(currentMin);
         $(this).children(".current-max").val(currentMax);
     });
 
-    // Select picket activation
+ /*   // Select picket activation
     $('select').selectBox(
         {
             mobile: true,
         }
-    );
+    );*/
 
 
     // Dropdown activation
-    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
         if (!$(this).next().hasClass('show')) {
             $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
         }
@@ -277,7 +275,7 @@ $(function () {
         $subMenu.toggleClass('show');
 
 
-        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
             $('.dropdown-submenu .show').removeClass("show");
         });
 
@@ -303,6 +301,7 @@ $(function () {
         });
     });
 
+/*
     $('.slick-fullwidth').slick({
         centerMode: true,
         centerPadding: '15%',
@@ -326,6 +325,7 @@ $(function () {
             }
         ]
     });
+*/
 
 
     // Modal activation
@@ -394,37 +394,37 @@ $(function () {
         })(marker);
     }
 
-    if($('#contactMap').length){
+    if ($('#contactMap').length) {
         LoadMap();
     }
 
 
-    // Countdown activation
-    $( function() {
+   /* // Countdown activation
+    $(function () {
         // Add background image
         //$.backstretch('../img/nature.jpg');
         var endDate = "December  27, 2019 15:03:25";
-        $('.countdown.simple').countdown({ date: endDate });
+        $('.countdown.simple').countdown({date: endDate});
         $('.countdown.styled').countdown({
             date: endDate,
-            render: function(data) {
+            render: function (data) {
                 $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>Days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>Hours</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>Minutes</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>Seconds</span></div>");
             }
         });
         $('.countdown.callback').countdown({
             date: +(new Date) + 10000,
-            render: function(data) {
+            render: function (data) {
                 $(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
             },
-            onEnd: function() {
+            onEnd: function () {
                 $(this.el).addClass('ended');
             }
-        }).on("click", function() {
+        }).on("click", function () {
             $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
         });
 
     });
-
+*/
 
     // Multi-item carousel activation
     var itemsMainDiv = ('.multi-carousel');
@@ -445,6 +445,7 @@ $(function () {
         resizeModalsContent();
         adjustHeader()
     });
+
     function ResCarouselSize() {
         var incno = 0;
         var dataItems = ("data-items");
@@ -478,7 +479,7 @@ $(function () {
                 incno = itemsSplit[0];
                 itemWidth = sampwidth / incno;
             }
-            $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+            $(this).css({'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers});
             $(this).find(itemClass).each(function () {
                 $(this).outerWidth(itemWidth);
             });
@@ -526,10 +527,11 @@ $(function () {
 
 
     resizeModalsContent();
+
     function resizeModalsContent() {
         var winWidth = $(window).width();
         var videoWidth = 400;
-        if(winWidth < 992) {
+        if (winWidth < 992) {
             videoWidth = 500;
         }
         var ratio = .6665;
@@ -539,7 +541,7 @@ $(function () {
 
 
     // Typed string activation
-    if($('#typed-strings').length > 0){
+    if ($('#typed-strings').length > 0) {
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
             typeSpeed: 100,
@@ -550,7 +552,7 @@ $(function () {
         });
     }
 
-    if($('#typed-strings2').length > 0){
+    if ($('#typed-strings2').length > 0) {
         var typed = new Typed('#typed2', {
             stringsElement: '#typed-strings2',
             typeSpeed: 100,
@@ -561,7 +563,7 @@ $(function () {
         });
     }
 
-    if($('#typed-strings3').length > 0){
+    if ($('#typed-strings3').length > 0) {
         var typed = new Typed('#typed3', {
             stringsElement: '#typed-strings3',
             typeSpeed: 100,
@@ -574,7 +576,7 @@ $(function () {
 
 
     //Youtube carousel activation
-    if($('.player').length > 0){
+    if ($('.player').length > 0) {
         $(document).on('ready', function () {
             $(".player").mb_YTPlayer();
         });
@@ -582,7 +584,7 @@ $(function () {
 
 
     /* ---- particles.js config ---- */
-    if($('#particles-banner').length > 0){
+    if ($('#particles-banner').length > 0) {
         loadParticlesBackground();
     }
 
@@ -593,7 +595,7 @@ $(function () {
                     "value": 100,
                     "density": {
                         "enable": true,
-                        "value_area":1000
+                        "value_area": 1000
                     }
                 },
                 "color": {
@@ -687,27 +689,28 @@ $(function () {
 
 
     // Switching Color schema
-     function populateColorPlates() {
-         var plateStings = '<div class="option-panel option-panel-collased">\n' +
-             '    <h2>Change Color</h2>\n' +
-             '    <div class="color-plate default-plate" data-color="default"></div>\n' +
-             '    <div class="color-plate blue-plate" data-color="blue"></div>\n' +
-             '    <div class="color-plate yellow-plate" data-color="yellow"></div>\n' +
-             '    <div class="color-plate red-plate" data-color="red"></div>\n' +
-             '    <div class="color-plate green-light-plate" data-color="green-light"></div>\n' +
-             '    <div class="color-plate orange-plate" data-color="orange"></div>\n' +
-             '    <div class="color-plate yellow-light-plate" data-color="yellow-light"></div>\n' +
-             '    <div class="color-plate green-light-2-plate" data-color="green-light-2"></div>\n' +
-             '    <div class="color-plate olive-plate" data-color="olive"></div>\n' +
-             '    <div class="color-plate purple-plate" data-color="purple"></div>\n' +
-             '    <div class="color-plate blue-light-plate" data-color="blue-light"></div>\n' +
-             '    <div class="color-plate brown-plate" data-color="brown"></div>\n' +
-             '    <div class="setting-button">\n' +
-             ' <i class="fa fa-gear"></i>\n' +
-             '    </div>\n' +
-             '</div>';
-         $('body').append(plateStings);
-     }
+    function populateColorPlates() {
+        var plateStings = '<div class="option-panel option-panel-collased">\n' +
+            '    <h2>Change Color</h2>\n' +
+            '    <div class="color-plate default-plate" data-color="default"></div>\n' +
+            '    <div class="color-plate blue-plate" data-color="blue"></div>\n' +
+            '    <div class="color-plate yellow-plate" data-color="yellow"></div>\n' +
+            '    <div class="color-plate red-plate" data-color="red"></div>\n' +
+            '    <div class="color-plate green-light-plate" data-color="green-light"></div>\n' +
+            '    <div class="color-plate orange-plate" data-color="orange"></div>\n' +
+            '    <div class="color-plate yellow-light-plate" data-color="yellow-light"></div>\n' +
+            '    <div class="color-plate green-light-2-plate" data-color="green-light-2"></div>\n' +
+            '    <div class="color-plate olive-plate" data-color="olive"></div>\n' +
+            '    <div class="color-plate purple-plate" data-color="purple"></div>\n' +
+            '    <div class="color-plate blue-light-plate" data-color="blue-light"></div>\n' +
+            '    <div class="color-plate brown-plate" data-color="brown"></div>\n' +
+            '    <div class="setting-button">\n' +
+            ' <i class="fa fa-gear"></i>\n' +
+            '    </div>\n' +
+            '</div>';
+        $('body').append(plateStings);
+    }
+
     $(document).on('click', '.color-plate', function () {
         var name = $(this).attr('data-color');
         $('link[id="style_sheet"]').attr('href', 'assets/css/skins/' + name + '.css');
@@ -733,3 +736,77 @@ $(function () {
         }
     }).trigger("resize");
 })(jQuery);
+
+//////////////////emailForm///////////////////////////////
+(function () {
+
+    var me = document.getElementById("formButton")
+
+    $("#formButton").click(function (e) {
+        e.preventDefault();
+        $("#formButton").attr("disabled", true);
+
+        me.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Submitting Message Please Wait.......';
+
+        $('#success').hide();
+        axios.post('/contactForm', {
+            'name': document.querySelector('#name').value,
+            'email': document.querySelector('#email').value,
+            'subject': document.querySelector('#subject').value,
+            'phone': document.querySelector('#phone').value,
+            'message': document.querySelector('#message').value,
+        })
+            .then((response) => {
+                //remove all error messages
+                const errorMessages = document.querySelectorAll('.text-danger');
+                errorMessages.forEach((element) => element.textContent = '');
+
+                // remove all form controls with highlighted text boxes
+                const formControls = document.querySelectorAll('.form-control');
+                formControls.forEach((element) => element.classList.remove('border', 'border-danger'));
+
+                // Reset the form and add the success Message at the buttom of the page
+                $('.form-control').val('')
+
+                this.insertAdjacentHTML('afterend', '<div id="success" class="alert alert-success">Form submitted successfully!<a class="close" data-dismiss="alert">×</a></div>');
+                // document.getElementById('success').scrollIntoView();
+
+                // Enable the button after some seconds
+                $("#button").attr("disabled", false)
+                me.innerHTML = 'Send Message'
+
+
+            })
+            .catch((error) => {
+                console.log(error)
+                const errors = error.response.data.errors;
+                const firstItem = Object.keys(errors)[0];
+                // console.log(firstItem);
+                const firstItemDom = document.getElementById(firstItem);
+                const firstErrorMessage = errors[firstItem][0];
+
+                // Scroll to the error message
+                // firstItemDom.scrollIntoView({behavior: "smooth"});
+
+                //remove all error messages
+                const errorMessages = document.querySelectorAll('.text-danger');
+                errorMessages.forEach((element) => element.textContent = '');
+
+                // Show the error message
+                firstItemDom.insertAdjacentHTML('afterend', `<div class="text-danger">${firstErrorMessage}</div>`);
+
+                // remove all form controls with highlighted text boxes
+                const formControls = document.querySelectorAll('.form-control');
+                formControls.forEach((element) => element.classList.remove('border', 'border-danger'));
+
+
+                // Highlight the form control with red backgorund
+                firstItemDom.classList.add('border', 'border-danger');
+
+                //Enable the button
+                $("#formButton").attr("disabled", false);
+                me.innerHTML = 'Send Message'
+            });
+    })
+
+})();

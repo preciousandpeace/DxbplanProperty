@@ -23,5 +23,8 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0N5pbJN10Y1oYFRd0MJ_v2g8W2QT74JE"></script>
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
 <!-- Custom JS Script -->
-<script  src="/assets/js/app.js"></script>
-<script  src="/assets/js/subscribe.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/js/subscribe.js"></script>
+<script src="{{asset('/js/app.js')}}"></script>
+
+
